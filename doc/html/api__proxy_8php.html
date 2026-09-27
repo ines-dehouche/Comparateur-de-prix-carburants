@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier lib/api_proxy.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('api__proxy_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier api_proxy.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Proxy serveur pour l'API gouvernementale des prix de carburants.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="api__proxy_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:afa3a65d809c61f6e4172840abb5d8644" id="r_afa3a65d809c61f6e4172840abb5d8644"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afa3a65d809c61f6e4172840abb5d8644">erreur_json</a> (string $message, int $code=400)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af498b42b83afed4dfe0af05fd802776c" id="r_af498b42b83afed4dfe0af05fd802776c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af498b42b83afed4dfe0af05fd802776c">$lat</a> = isset($_GET['lat']) ? (float) $_GET['lat'] : null</td></tr>
+<tr class="memitem:a03836509761c0935d0c55370b184ccd6" id="r_a03836509761c0935d0c55370b184ccd6"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a03836509761c0935d0c55370b184ccd6">$lon</a> = isset($_GET['lon']) ? (float) $_GET['lon'] : null</td></tr>
+<tr class="memitem:a43f58738b35d5bc9c5918eba0f519a20" id="r_a43f58738b35d5bc9c5918eba0f519a20"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a43f58738b35d5bc9c5918eba0f519a20">$rayon</a> = isset($_GET['rayon']) ? (int) $_GET['rayon'] : 10</td></tr>
+<tr class="memitem:ad064c0a4a62039587f1c7d20b837eb31" id="r_ad064c0a4a62039587f1c7d20b837eb31"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad064c0a4a62039587f1c7d20b837eb31">$dept</a> = isset($_GET['dept']) ? trim($_GET['dept']) : ''</td></tr>
+<tr class="memitem:acc3746cfaca53a8d6942c6252b17d14f" id="r_acc3746cfaca53a8d6942c6252b17d14f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acc3746cfaca53a8d6942c6252b17d14f">$ville</a> = isset($_GET['ville']) ? trim($_GET['ville']) : ''</td></tr>
+<tr class="memitem:a9f47e3450e8193ca3c87c7a1cba89d73" id="r_a9f47e3450e8193ca3c87c7a1cba89d73"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9f47e3450e8193ca3c87c7a1cba89d73">$carb</a> = isset($_GET['carb']) ? trim($_GET['carb']) : ''</td></tr>
+<tr class="memitem:ae05862a0294251c88629b141b5ce329a" id="r_ae05862a0294251c88629b141b5ce329a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae05862a0294251c88629b141b5ce329a">$limit</a> = isset($_GET['limit']) ? (int) $_GET['limit'] : 50</td></tr>
+<tr class="memitem:a76f6da3060813078b40017fee6cb72bd" id="r_a76f6da3060813078b40017fee6cb72bd"><td class="memItemLeft"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>( $rayon&lt; 1||$rayon &gt; 100) <a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>($limit&lt; 1|| $limit &gt; 200)&#160;</td><td class="memItemRight"><a class="el" href="#a76f6da3060813078b40017fee6cb72bd">$api_base</a></td></tr>
+<tr class="memitem:afe68e6fbe7acfbffc0af0c84a1996466" id="r_afe68e6fbe7acfbffc0af0c84a1996466"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> = ['limit' =&gt; $limit]</td></tr>
+<tr class="memitem:a5074f3256e2ea31fc65fa2abf7270c04" id="r_a5074f3256e2ea31fc65fa2abf7270c04"><td class="memItemLeft"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>($lat !==null &amp;&amp; $lon !==null) elseif(!empty( $dept)) elseif(!empty($ville)&#160;</td><td class="memItemRight"><a class="el" href="#a5074f3256e2ea31fc65fa2abf7270c04">else</a> )</td></tr>
+<tr class="memitem:acf215f34a917d014776ce684a9ee8909" id="r_acf215f34a917d014776ce684a9ee8909"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf215f34a917d014776ce684a9ee8909">$url</a> = $api_base . '?' . http_build_query($params)</td></tr>
+<tr class="memitem:af2abf94f5e24679d31255b4234e040f5" id="r_af2abf94f5e24679d31255b4234e040f5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af2abf94f5e24679d31255b4234e040f5">$json_brut</a> = <a class="el" href="http__helper_8php.html#a0af3ee46823cce5d1c758418dd0c36f0">fetchJsonFromUrl</a>($url)</td></tr>
+<tr class="memitem:a8415a21c6c801068f39b3bc7f1ec886d" id="r_a8415a21c6c801068f39b3bc7f1ec886d"><td class="memItemLeft"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>($json_brut===null)&#160;</td><td class="memItemRight"><a class="el" href="#a8415a21c6c801068f39b3bc7f1ec886d">$data</a> = json_decode($json_brut, true)</td></tr>
+<tr class="memitem:a3351d06a5cab332f9ec02f318fb1893b" id="r_a3351d06a5cab332f9ec02f318fb1893b"><td class="memItemLeft"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>(!is_array($data))&#160;</td><td class="memItemRight"><a class="el" href="#a3351d06a5cab332f9ec02f318fb1893b">$champs_carb</a></td></tr>
+<tr class="memitem:aa8cfa600199e7df1d5f7a7d33b74d395" id="r_aa8cfa600199e7df1d5f7a7d33b74d395"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa8cfa600199e7df1d5f7a7d33b74d395">$resultats</a> = []</td></tr>
+<tr class="memitem:a6b7e9a1b0235f5820f40d72d296f1ea9" id="r_a6b7e9a1b0235f5820f40d72d296f1ea9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6b7e9a1b0235f5820f40d72d296f1ea9">foreach</a> (( $data[ 'results'] ??[]) as $rec)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Proxy serveur pour l'API gouvernementale des prix de carburants. </p>
+<p>Ce fichier fait transiter les requêtes vers l'API data.economie.gouv.fr CÔTÉ SERVEUR, conformément aux exigences du projet : "Les échanges se feront impérativement entre votre serveur Web et l'API"</p>
+<p>Paramètres GET acceptés :</p><ul>
+<li>lat : latitude (float) pour recherche géographique</li>
+<li>lon : longitude (float) pour recherche géographique</li>
+<li>rayon : rayon en km (int, défaut 10)</li>
+<li>dept : code département (string)</li>
+<li>ville : nom de ville (string)</li>
+<li>carb : type de carburant (string)</li>
+<li>limit : nombre max de résultats (int, défaut 50)</li>
+</ul>
+<dl class="section author"><dt>Auteur</dt><dd>BOUNAB Kahina - DEHOUCHE Ines </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="afa3a65d809c61f6e4172840abb5d8644" name="afa3a65d809c61f6e4172840abb5d8644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3a65d809c61f6e4172840abb5d8644">&#9670;&#160;</a></span>erreur_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">erreur_json </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$code</em></span><span class="paramdefsep"> = </span><span class="paramdefval">400</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renvoie une réponse JSON d'erreur et termine le script.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message d'erreur </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$code</td><td>Code HTTP </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00038">38</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="a76f6da3060813078b40017fee6cb72bd" name="a76f6da3060813078b40017fee6cb72bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f6da3060813078b40017fee6cb72bd">&#9670;&#160;</a></span>$api_base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>($rayon&lt; 1|| $rayon &gt; 100) <a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a> ( $limit&lt; 1||$limit &gt; 200) $api_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= <span class="stringliteral">&#39;https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/&#39;</span></div>
+<div class="line">. <span class="stringliteral">&#39;prix-des-carburants-en-france-flux-instantane-v2/records/&#39;</span></div>
+</div><!-- fragment -->
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00065">65</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="a9f47e3450e8193ca3c87c7a1cba89d73" name="a9f47e3450e8193ca3c87c7a1cba89d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f47e3450e8193ca3c87c7a1cba89d73">&#9670;&#160;</a></span>$carb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$carb = isset($_GET['carb']) ? trim($_GET['carb']) : ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00051">51</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__carburants_8php_source.html#l00191">marquer_prix_minimum()</a>, et <a class="el" href="csv__handler_8php_source.html#l00171">stats_carburants()</a>.</p>
+
+</div>
+</div>
+<a id="a3351d06a5cab332f9ec02f318fb1893b" name="a3351d06a5cab332f9ec02f318fb1893b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3351d06a5cab332f9ec02f318fb1893b">&#9670;&#160;</a></span>$champs_carb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a> (!is_array( $data)) $champs_carb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">             = [</div>
+<div class="line">    <span class="stringliteral">&#39;SP95&#39;</span>   =&gt; <span class="stringliteral">&#39;sp95_prix&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;SP98&#39;</span>   =&gt; <span class="stringliteral">&#39;sp98_prix&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;E10&#39;</span>    =&gt; <span class="stringliteral">&#39;e10_prix&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;E85&#39;</span>    =&gt; <span class="stringliteral">&#39;e85_prix&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;Gazole&#39;</span> =&gt; <span class="stringliteral">&#39;gazole_prix&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;GPLc&#39;</span>   =&gt; <span class="stringliteral">&#39;gplc_prix&#39;</span>,</div>
+<div class="line">]</div>
+</div><!-- fragment -->
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00120">120</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="a8415a21c6c801068f39b3bc7f1ec886d" name="a8415a21c6c801068f39b3bc7f1ec886d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8415a21c6c801068f39b3bc7f1ec886d">&#9670;&#160;</a></span>$data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a> ( $json_brut===null) $data = json_decode($json_brut, true)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00113">113</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="http__helper_8php_source.html#l00017">fetchJsonFromUrl()</a>, <a class="el" href="api__geoloc_8php_source.html#l00043">getGeoInfoFromIpInfo()</a>, <a class="el" href="api__ghibli_8php_source.html#l00019">getGhibliFilms()</a>, <a class="el" href="csv__handler_8php_source.html#l00302">lire_cookie_derniere_ville()</a>, et <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+<a id="ad064c0a4a62039587f1c7d20b837eb31" name="ad064c0a4a62039587f1c7d20b837eb31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad064c0a4a62039587f1c7d20b837eb31">&#9670;&#160;</a></span>$dept</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$dept = isset($_GET['dept']) ? trim($_GET['dept']) : ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00049">49</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="af2abf94f5e24679d31255b4234e040f5" name="af2abf94f5e24679d31255b4234e040f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2abf94f5e24679d31255b4234e040f5">&#9670;&#160;</a></span>$json_brut</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$json_brut = <a class="el" href="http__helper_8php.html#a0af3ee46823cce5d1c758418dd0c36f0">fetchJsonFromUrl</a>($url)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00107">107</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="af498b42b83afed4dfe0af05fd802776c" name="af498b42b83afed4dfe0af05fd802776c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af498b42b83afed4dfe0af05fd802776c">&#9670;&#160;</a></span>$lat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$lat = isset($_GET['lat']) ? (float) $_GET['lat'] : null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00046">46</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="ae05862a0294251c88629b141b5ce329a" name="ae05862a0294251c88629b141b5ce329a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05862a0294251c88629b141b5ce329a">&#9670;&#160;</a></span>$limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$limit = isset($_GET['limit']) ? (int) $_GET['limit'] : 50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00052">52</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="a03836509761c0935d0c55370b184ccd6" name="a03836509761c0935d0c55370b184ccd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03836509761c0935d0c55370b184ccd6">&#9670;&#160;</a></span>$lon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$lon = isset($_GET['lon']) ? (float) $_GET['lon'] : null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00047">47</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="afe68e6fbe7acfbffc0af0c84a1996466" name="afe68e6fbe7acfbffc0af0c84a1996466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe68e6fbe7acfbffc0af0c84a1996466">&#9670;&#160;</a></span>$params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$params = ['limit' =&gt; $limit]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00068">68</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+<a id="a43f58738b35d5bc9c5918eba0f519a20" name="a43f58738b35d5bc9c5918eba0f519a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f58738b35d5bc9c5918eba0f519a20">&#9670;&#160;</a></span>$rayon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$rayon = isset($_GET['rayon']) ? (int) $_GET['rayon'] : 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00048">48</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="aa8cfa600199e7df1d5f7a7d33b74d395" name="aa8cfa600199e7df1d5f7a7d33b74d395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8cfa600199e7df1d5f7a7d33b74d395">&#9670;&#160;</a></span>$resultats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$resultats = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00129">129</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="acf215f34a917d014776ce684a9ee8909" name="acf215f34a917d014776ce684a9ee8909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf215f34a917d014776ce684a9ee8909">&#9670;&#160;</a></span>$url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$url = $api_base . '?' . http_build_query($params)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00104">104</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="http__helper_8php_source.html#l00017">fetchJsonFromUrl()</a>, <a class="el" href="api__geoloc_8php_source.html#l00043">getGeoInfoFromIpInfo()</a>, et <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+<a id="acc3746cfaca53a8d6942c6252b17d14f" name="acc3746cfaca53a8d6942c6252b17d14f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3746cfaca53a8d6942c6252b17d14f">&#9670;&#160;</a></span>$ville</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ville = isset($_GET['ville']) ? trim($_GET['ville']) : ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00050">50</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__handler_8php_source.html#l00044">enregistrer_consultation()</a>, <a class="el" href="api__xml_8php_source.html#l00170">getStationsXml()</a>, <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>, <a class="el" href="csv__handler_8php_source.html#l00273">sauvegarder_cookie_derniere_ville()</a>, et <a class="el" href="csv__handler_8php_source.html#l00128">top_villes_consultees()</a>.</p>
+
+</div>
+</div>
+<a id="a5074f3256e2ea31fc65fa2abf7270c04" name="a5074f3256e2ea31fc65fa2abf7270c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5074f3256e2ea31fc65fa2abf7270c04">&#9670;&#160;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>( $lat !==null &amp;&amp;$lon !==null) elseif(!empty($dept)) elseif (!empty( $ville) else) </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <a class="code hl_function" href="#afa3a65d809c61f6e4172840abb5d8644">erreur_json</a>(<span class="stringliteral">&#39;Paramètres insuffisants : fournissez lat/lon, dept ou ville.&#39;</span>)</div>
+<div class="ttc" id="aapi__proxy_8php_html_afa3a65d809c61f6e4172840abb5d8644"><div class="ttname"><a href="#afa3a65d809c61f6e4172840abb5d8644">erreur_json</a></div><div class="ttdeci">erreur_json(string $message, int $code=400)</div><div class="ttdef"><b>Definition</b> <a href="api__proxy_8php_source.html#l00038">api_proxy.php:38</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00100">100</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+<a id="a6b7e9a1b0235f5820f40d72d296f1ea9" name="a6b7e9a1b0235f5820f40d72d296f1ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7e9a1b0235f5820f40d72d296f1ea9">&#9670;&#160;</a></span>foreach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">foreach(($data['results'] ??[]) as $rec) </td>
+          <td>(</td>
+          <td class="paramtype">($data['results'] ??[]) as</td>          <td class="paramname"><span class="paramname"><em>$rec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="api__proxy_8php_source.html#l00131">131</a> du fichier <a class="el" href="api__proxy_8php_source.html">api_proxy.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a href="api__proxy_8php.html">api_proxy.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

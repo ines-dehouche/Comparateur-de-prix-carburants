@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora:  Fichier source de tech.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('tech_8php_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">tech.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="tech_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>declare(strict_types=1);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="tech_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">    9</a></span><a class="code hl_variable" href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a> = <span class="stringliteral">&#39;Page technique - Carbora&#39;</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>require_once __DIR__ . <span class="stringliteral">&#39;/includes/header.inc.php&#39;</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>require_once __DIR__ . <span class="stringliteral">&#39;/lib/api_ghibli.php&#39;</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>require_once __DIR__ . <span class="stringliteral">&#39;/lib/api_geoloc.php&#39;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>require_once __DIR__ . <span class="stringliteral">&#39;/lib/api_xml.php&#39;</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="tech_8php.html#a697f20bb465adeab6a51e03978fda04c">   16</a></span><a class="code hl_variable" href="tech_8php.html#a697f20bb465adeab6a51e03978fda04c">$film</a> = <a class="code hl_function" href="api__ghibli_8php.html#a1abc32747065da96e525a2e5c0b70618">getRandomGhibliFilm</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="tech_8php.html#ad6a2b6903bb02d7edbf60fddfd10c239">   17</a></span><a class="code hl_variable" href="tech_8php.html#ad6a2b6903bb02d7edbf60fddfd10c239">$ipVisiteur</a> = <a class="code hl_function" href="api__geoloc_8php.html#a28c0da9055c181c2c24e96143ab96fb9">getVisitorIp</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="tech_8php.html#ac5f7722f3dabe7528163ffc562471cf1">   18</a></span><a class="code hl_variable" href="tech_8php.html#ac5f7722f3dabe7528163ffc562471cf1">$geoInfo</a> = <a class="code hl_function" href="api__geoloc_8php.html#ad8e3ee713ccf134ffb846d02cef6a5e0">getGeoInfoFromIpInfo</a>(<a class="code hl_variable" href="tech_8php.html#ad6a2b6903bb02d7edbf60fddfd10c239">$ipVisiteur</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Génération des données XML (parsées pour affichage)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="tech_8php.html#aeb4473180aa79fde37ad0c7734c202c8">   21</a></span><a class="code hl_variable" href="tech_8php.html#aeb4473180aa79fde37ad0c7734c202c8">$xmlGhibliString</a> = <a class="code hl_function" href="api__xml_8php.html#af8cb09b8b2412faee5f4add2aef72e6e">getGhibliFilmsXml</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="tech_8php.html#a956f2388cd7eeb289ac43fc2d7067624">   22</a></span><a class="code hl_variable" href="tech_8php.html#a956f2388cd7eeb289ac43fc2d7067624">$xmlGeolocString</a> = <a class="code hl_function" href="api__xml_8php.html#a2e653878ee0674ad4593426ed07aa511">getGeolocXml</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Parsing XML pour affichage propre</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">   25</a></span><a class="code hl_variable" href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">$filmsXml</a> = @simplexml_load_string(<a class="code hl_variable" href="tech_8php.html#aeb4473180aa79fde37ad0c7734c202c8">$xmlGhibliString</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">   26</a></span><a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>   = @simplexml_load_string(<a class="code hl_variable" href="tech_8php.html#a956f2388cd7eeb289ac43fc2d7067624">$xmlGeolocString</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>?&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>&lt;main&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    &lt;section&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        &lt;h1&gt;Page technique&lt;/h1&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        &lt;p&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            Cette page présente les premiers tests d<span class="stringliteral">&#39;API du projet Carbora,</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="stringliteral">            conformément aux attentes du sujet.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="stringliteral">        &lt;/p&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="stringliteral">    &lt;/section&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="stringliteral">    &lt;section&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="stringliteral">        &lt;h2&gt;Film Ghibli aléatoire&lt;/h2&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="stringliteral">        &lt;?php if ($film !== null): ?&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">            &lt;article&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral">                &lt;h3&gt;&lt;?php echo htmlspecialchars($film[&#39;</span>title<span class="stringliteral">&#39;] ?? &#39;</span>Titre inconnu<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/h3&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="stringliteral">                &lt;p&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">                    &lt;strong&gt;Titre japonais :&lt;/strong&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">                    &lt;span lang=&quot;ja&quot;&gt;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral">                        &lt;?php echo htmlspecialchars($film[&#39;</span>original_title<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="stringliteral">                    &lt;/span&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="stringliteral">                &lt;/p&gt;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="stringliteral">                &lt;p&gt;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="stringliteral">                    &lt;strong&gt;Année de sortie :&lt;/strong&gt;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="stringliteral">                    &lt;?php echo htmlspecialchars($film[&#39;</span>release_date<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="stringliteral">                &lt;/p&gt;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="stringliteral">                &lt;p&gt;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="stringliteral">                    &lt;strong&gt;Description :&lt;/strong&gt;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="stringliteral">                    &lt;?php echo htmlspecialchars($film[&#39;</span>description<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="stringliteral">                &lt;/p&gt;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="stringliteral">                &lt;?php if (!empty($film[&#39;</span>image<span class="stringliteral">&#39;]) || !empty($film[&#39;</span>movie_banner<span class="stringliteral">&#39;])): ?&gt;</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="stringliteral">                &lt;div style=&quot;display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1rem;&quot;&gt;</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="stringliteral">                    &lt;?php if (!empty($film[&#39;</span>image<span class="stringliteral">&#39;])): ?&gt;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="stringliteral">                        &lt;figure style=&quot;margin:0;&quot;&gt;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="stringliteral">                            &lt;img src=&quot;&lt;?php echo htmlspecialchars($film[&#39;</span>image<span class="stringliteral">&#39;], ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&quot;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="stringliteral">                                 alt=&quot;Affiche du film &lt;?php echo htmlspecialchars($film[&#39;</span>title<span class="stringliteral">&#39;] ?? &#39;</span><span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&quot;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="stringliteral">                                 width=&quot;300&quot;/&gt;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="stringliteral">                            &lt;figcaption&gt;Affiche du film.&lt;/figcaption&gt;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="stringliteral">                        &lt;/figure&gt;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="stringliteral">                    &lt;?php endif; ?&gt;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="stringliteral">                    &lt;?php if (!empty($film[&#39;</span>movie_banner<span class="stringliteral">&#39;])): ?&gt;</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="tech_8php.html#ad5dea7d84b02eca7de63691b604058eb">   74</a></span><span class="stringliteral">                        &lt;figure style=&quot;margin:0; flex:1;&quot;&gt;</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="stringliteral">                            &lt;img src=&quot;&lt;?php echo htmlspecialchars($film[&#39;</span>movie_banner<span class="stringliteral">&#39;], ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&quot;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="stringliteral">                                 alt=&quot;Bannière du film &lt;?php echo htmlspecialchars($film[&#39;</span>title<span class="stringliteral">&#39;] ?? &#39;</span><span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&quot;</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="stringliteral">                                 style=&quot;width:100%; height:100%; object-fit:cover;&quot;/&gt;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="stringliteral">                            &lt;figcaption&gt;Bannière du film.&lt;/figcaption&gt;</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="stringliteral">                        &lt;/figure&gt;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="tech_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">   80</a></span><span class="stringliteral">                    &lt;?php endif; ?&gt;</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="stringliteral">                &lt;/div&gt;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="stringliteral">                &lt;?php endif; ?&gt;</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="stringliteral">            &lt;/article&gt;</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="tech_8php.html#ae8b4bb1441c6ab4dcb28a37bc46c8ead">   84</a></span><span class="stringliteral">        &lt;?php else: ?&gt;</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="stringliteral">            &lt;p&gt;Impossible de récupérer les informations du film pour le moment.&lt;/p&gt;</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="stringliteral">        &lt;?php endif; ?&gt;</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="stringliteral">    &lt;/section&gt;</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="stringliteral">    &lt;section&gt;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="stringliteral">        &lt;h2&gt;Géolocalisation approximative du visiteur&lt;/h2&gt;</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="stringliteral">        &lt;?php if ($geoInfo !== null): ?&gt;</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="stringliteral">            &lt;ul&gt;</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="stringliteral">                &lt;li&gt;&lt;strong&gt;Adresse IP :&lt;/strong&gt; &lt;?php echo htmlspecialchars($geoInfo[&#39;</span>ip<span class="stringliteral">&#39;] ?? $ipVisiteur, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/li&gt;</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="stringliteral">                &lt;li&gt;&lt;strong&gt;Ville :&lt;/strong&gt; &lt;?php echo htmlspecialchars($geoInfo[&#39;</span>city<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/li&gt;</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="stringliteral">                &lt;li&gt;&lt;strong&gt;Région :&lt;/strong&gt; &lt;?php echo htmlspecialchars($geoInfo[&#39;</span>region<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/li&gt;</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="stringliteral">                &lt;li&gt;&lt;strong&gt;Pays :&lt;/strong&gt; &lt;?php echo htmlspecialchars($geoInfo[&#39;</span>country<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/li&gt;</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="stringliteral">                &lt;li&gt;&lt;strong&gt;Coordonnées :&lt;/strong&gt; &lt;?php echo htmlspecialchars($geoInfo[&#39;</span>loc<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/li&gt;</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="stringliteral">                &lt;li&gt;&lt;strong&gt;Fuseau horaire :&lt;/strong&gt; &lt;?php echo htmlspecialchars($geoInfo[&#39;</span>timezone<span class="stringliteral">&#39;] ?? &#39;</span>Non disponible<span class="stringliteral">&#39;, ENT_QUOTES, &#39;</span>UTF-8<span class="stringliteral">&#39;); ?&gt;&lt;/li&gt;</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="stringliteral">            &lt;/ul&gt;</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="stringliteral">            &lt;p&gt;La position affichée est une estimation obtenue à partir de l&#39;</span>adresse IP du visiteur.&lt;/p&gt;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="tech_8php.html#aed2d37b4e8da3f52103ae96ce9d26d82">  102</a></span>        &lt;?php <span class="keywordflow">else</span>: ?&gt;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            &lt;p&gt;Impossible de récupérer la géolocalisation pour le moment.&lt;/p&gt;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        &lt;?php <a class="code hl_variable" href="carte_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    &lt;/section&gt;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    &lt;section&gt;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        &lt;h2&gt;Données XML&lt;/h2&gt;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        &lt;p&gt;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            Les mêmes données sont ici récupérées et converties au format XML</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            via la classe &lt;code&gt;DOMDocument&lt;/code&gt; de PHP, puis parsées avec</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            &lt;code&gt;SimpleXML&lt;/code&gt; pour un affichage structuré.</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        &lt;/p&gt;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        &lt;h3&gt;Films Ghibli via XML&lt;/h3&gt;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        &lt;p&gt;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            Source : &lt;a href=<span class="stringliteral">&quot;&lt;?php echo htmlspecialchars(API_GHIBLI_URL, ENT_QUOTES, &#39;UTF-8&#39;); ?&gt;&quot;</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                        target=<span class="stringliteral">&quot;_blank&quot;</span> rel=<span class="stringliteral">&quot;noopener noreferrer&quot;</span>&gt;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                &lt;?php echo htmlspecialchars(<a class="code hl_variable" href="config_8inc_8php.html#aaeb42b19691a751f51d6d568d93ccb6f">API_GHIBLI_URL</a>, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            &lt;/a&gt;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        &lt;/p&gt;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        &lt;?php <span class="keywordflow">if</span> (<a class="code hl_variable" href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">$filmsXml</a> !== <span class="keyword">false</span> &amp;&amp; isset(<a class="code hl_variable" href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">$filmsXml</a>-&gt;film)): ?&gt;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            &lt;p&gt;&lt;?php echo count(<a class="code hl_variable" href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">$filmsXml</a>-&gt;film); ?&gt; films récupérés.&lt;/p&gt;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;tableau-container&quot;</span>&gt;&lt;table <span class="keyword">class</span>=<span class="stringliteral">&quot;tableau-resultats&quot;</span>&gt;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                &lt;caption&gt;Liste des films Studio Ghibli&lt;/caption&gt;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                &lt;thead&gt;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                    &lt;tr&gt;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                        &lt;th scope=<span class="stringliteral">&quot;col&quot;</span>&gt;Titre&lt;/th&gt;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                        &lt;th scope=<span class="stringliteral">&quot;col&quot;</span>&gt;Titre original&lt;/th&gt;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                        &lt;th scope=<span class="stringliteral">&quot;col&quot;</span>&gt;Année&lt;/th&gt;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                        &lt;th scope=<span class="stringliteral">&quot;col&quot;</span>&gt;Réalisateur&lt;/th&gt;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                        &lt;th scope=<span class="stringliteral">&quot;col&quot;</span>&gt;Score RT&lt;/th&gt;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                    &lt;/tr&gt;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                &lt;/thead&gt;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                &lt;tbody&gt;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                    &lt;?php <span class="keywordflow">foreach</span> (<a class="code hl_variable" href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">$filmsXml</a>-&gt;film as $f): ?&gt;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                        &lt;tr&gt;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                            &lt;td&gt;&lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)$f-&gt;titre, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/td&gt;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                            &lt;td lang=<span class="stringliteral">&quot;ja&quot;</span>&gt;&lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)$f-&gt;titre_original, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/td&gt;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                            &lt;td&gt;&lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)$f-&gt;annee, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/td&gt;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                            &lt;td&gt;&lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)$f-&gt;realisateur, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/td&gt;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                            &lt;td&gt;&lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)$f-&gt;score_rt, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt; %&lt;/td&gt;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                        &lt;/tr&gt;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="tech_8php.html#a672d9707ef91db026c210f98cc601123">  145</a></span>                    &lt;?php <a class="code hl_variable" href="carte_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a>; ?&gt;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                &lt;/tbody&gt;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            &lt;/table&gt;&lt;/div&gt;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="tech_8php.html#ad3aa1069376b85bd4e503b216d54b18d">  148</a></span>        &lt;?php <span class="keywordflow">else</span>: ?&gt;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            &lt;p&gt;Impossible de récupérer les films Ghibli via XML.&lt;/p&gt;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        &lt;?php <a class="code hl_variable" href="carte_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        &lt;h3&gt;Géolocalisation du visiteur via XML&lt;/h3&gt;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        &lt;p&gt;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            Source : &lt;a href=<span class="stringliteral">&quot;https://ipinfo.io&quot;</span> target=<span class="stringliteral">&quot;_blank&quot;</span> rel=<span class="stringliteral">&quot;noopener noreferrer&quot;</span>&gt;ipinfo.io&lt;/a&gt;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        &lt;/p&gt;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        &lt;?php <span class="keywordflow">if</span> (<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a> !== <span class="keyword">false</span> &amp;&amp; !isset(<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;erreur)): ?&gt;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            &lt;ul&gt;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                &lt;li&gt;&lt;strong&gt;Adresse IP :&lt;/strong&gt; &lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;ip, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                &lt;li&gt;&lt;strong&gt;Ville :&lt;/strong&gt; &lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;ville, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                &lt;li&gt;&lt;strong&gt;Région :&lt;/strong&gt; &lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;region, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                &lt;li&gt;&lt;strong&gt;Pays :&lt;/strong&gt; &lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;pays, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                &lt;li&gt;&lt;strong&gt;Coordonnées :&lt;/strong&gt; &lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;coordonnees, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                &lt;li&gt;&lt;strong&gt;Fuseau horaire :&lt;/strong&gt; &lt;?php echo htmlspecialchars((<span class="keywordtype">string</span>)<a class="code hl_variable" href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a>-&gt;fuseau_horaire, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            &lt;/ul&gt;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            &lt;p&gt;La position affichée est une estimation obtenue à partir de l<span class="stringliteral">&#39;adresse IP du visiteur.&lt;/p&gt;</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="tech_8php.html#a4b953ca50a29aec287fd26dcb69696db">  167</a></span><span class="stringliteral">        &lt;?php else: ?&gt;</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="stringliteral">            &lt;p&gt;Impossible de récupérer la géolocalisation via XML.&lt;/p&gt;</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="stringliteral">        &lt;?php endif; ?&gt;</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="stringliteral">    &lt;/section&gt;</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="stringliteral">&lt;/main&gt;</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="stringliteral">&lt;?php require_once __DIR__ . &#39;</span>/includes/footer.inc.php<span class="stringliteral">&#39;; ?&gt;</span></div>
+<div class="ttc" id="aapi__geoloc_8php_html_a28c0da9055c181c2c24e96143ab96fb9"><div class="ttname"><a href="api__geoloc_8php.html#a28c0da9055c181c2c24e96143ab96fb9">getVisitorIp</a></div><div class="ttdeci">getVisitorIp()</div><div class="ttdoc">Récupère l&#39;adresse IP réelle du visiteur.</div><div class="ttdef"><b>Definition</b> <a href="api__geoloc_8php_source.html#l00019">api_geoloc.php:19</a></div></div>
+<div class="ttc" id="aapi__geoloc_8php_html_ad8e3ee713ccf134ffb846d02cef6a5e0"><div class="ttname"><a href="api__geoloc_8php.html#ad8e3ee713ccf134ffb846d02cef6a5e0">getGeoInfoFromIpInfo</a></div><div class="ttdeci">getGeoInfoFromIpInfo(string $ip)</div><div class="ttdoc">Interroge l&#39;API ipinfo.io pour obtenir la localisation d&#39;une IP.</div><div class="ttdef"><b>Definition</b> <a href="api__geoloc_8php_source.html#l00043">api_geoloc.php:43</a></div></div>
+<div class="ttc" id="aapi__ghibli_8php_html_a1abc32747065da96e525a2e5c0b70618"><div class="ttname"><a href="api__ghibli_8php.html#a1abc32747065da96e525a2e5c0b70618">getRandomGhibliFilm</a></div><div class="ttdeci">getRandomGhibliFilm()</div><div class="ttdoc">Sélectionne aléatoirement un film parmi la liste Ghibli.</div><div class="ttdef"><b>Definition</b> <a href="api__ghibli_8php_source.html#l00037">api_ghibli.php:37</a></div></div>
+<div class="ttc" id="aapi__xml_8php_html_a2e653878ee0674ad4593426ed07aa511"><div class="ttname"><a href="api__xml_8php.html#a2e653878ee0674ad4593426ed07aa511">getGeolocXml</a></div><div class="ttdeci">getGeolocXml()</div><div class="ttdef"><b>Definition</b> <a href="api__xml_8php_source.html#l00107">api_xml.php:107</a></div></div>
+<div class="ttc" id="aapi__xml_8php_html_af8cb09b8b2412faee5f4add2aef72e6e"><div class="ttname"><a href="api__xml_8php.html#af8cb09b8b2412faee5f4add2aef72e6e">getGhibliFilmsXml</a></div><div class="ttdeci">getGhibliFilmsXml()</div><div class="ttdef"><b>Definition</b> <a href="api__xml_8php_source.html#l00045">api_xml.php:45</a></div></div>
+<div class="ttc" id="acarte_8php_html_a43e5b5a819fedbd12b8cf5421ba6985e"><div class="ttname"><a href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a></div><div class="ttdeci">$titre</div><div class="ttdef"><b>Definition</b> <a href="carte_8php_source.html#l00019">carte.php:19</a></div></div>
+<div class="ttc" id="acarte_8php_html_a672d9707ef91db026c210f98cc601123"><div class="ttname"><a href="carte_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a></div><div class="ttdeci">endforeach</div><div class="ttdef"><b>Definition</b> <a href="carte_8php_source.html#l00488">carte.php:488</a></div></div>
+<div class="ttc" id="acarte_8php_html_a82cd33ca97ff99f2fcc5e9c81d65251b"><div class="ttname"><a href="carte_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a></div><div class="ttdeci">endif</div><div class="ttdef"><b>Definition</b> <a href="carte_8php_source.html#l00512">carte.php:512</a></div></div>
+<div class="ttc" id="aconfig_8inc_8php_html_aaeb42b19691a751f51d6d568d93ccb6f"><div class="ttname"><a href="config_8inc_8php.html#aaeb42b19691a751f51d6d568d93ccb6f">API_GHIBLI_URL</a></div><div class="ttdeci">const API_GHIBLI_URL</div><div class="ttdef"><b>Definition</b> <a href="config_8inc_8php_source.html#l00025">config.inc.php:25</a></div></div>
+<div class="ttc" id="atech_8php_html_a6815ac3ed1e4127260436e1e199bc9ae"><div class="ttname"><a href="tech_8php.html#a6815ac3ed1e4127260436e1e199bc9ae">$geoXml</a></div><div class="ttdeci">$geoXml</div><div class="ttdef"><b>Definition</b> <a href="#l00026">tech.php:26</a></div></div>
+<div class="ttc" id="atech_8php_html_a697f20bb465adeab6a51e03978fda04c"><div class="ttname"><a href="tech_8php.html#a697f20bb465adeab6a51e03978fda04c">$film</a></div><div class="ttdeci">$film</div><div class="ttdef"><b>Definition</b> <a href="#l00016">tech.php:16</a></div></div>
+<div class="ttc" id="atech_8php_html_a956f2388cd7eeb289ac43fc2d7067624"><div class="ttname"><a href="tech_8php.html#a956f2388cd7eeb289ac43fc2d7067624">$xmlGeolocString</a></div><div class="ttdeci">$xmlGeolocString</div><div class="ttdef"><b>Definition</b> <a href="#l00022">tech.php:22</a></div></div>
+<div class="ttc" id="atech_8php_html_ac5f7722f3dabe7528163ffc562471cf1"><div class="ttname"><a href="tech_8php.html#ac5f7722f3dabe7528163ffc562471cf1">$geoInfo</a></div><div class="ttdeci">$geoInfo</div><div class="ttdef"><b>Definition</b> <a href="#l00018">tech.php:18</a></div></div>
+<div class="ttc" id="atech_8php_html_ad2a749d67af3426cdf3941c25e4d4d51"><div class="ttname"><a href="tech_8php.html#ad2a749d67af3426cdf3941c25e4d4d51">$filmsXml</a></div><div class="ttdeci">$filmsXml</div><div class="ttdef"><b>Definition</b> <a href="#l00025">tech.php:25</a></div></div>
+<div class="ttc" id="atech_8php_html_ad6a2b6903bb02d7edbf60fddfd10c239"><div class="ttname"><a href="tech_8php.html#ad6a2b6903bb02d7edbf60fddfd10c239">$ipVisiteur</a></div><div class="ttdeci">$ipVisiteur</div><div class="ttdef"><b>Definition</b> <a href="#l00017">tech.php:17</a></div></div>
+<div class="ttc" id="atech_8php_html_aeb4473180aa79fde37ad0c7734c202c8"><div class="ttname"><a href="tech_8php.html#aeb4473180aa79fde37ad0c7734c202c8">$xmlGhibliString</a></div><div class="ttdeci">$xmlGhibliString</div><div class="ttdef"><b>Definition</b> <a href="#l00021">tech.php:21</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="tech_8php.html">tech.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

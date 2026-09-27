@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier statistiques.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('statistiques_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier statistiques.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Page de statistiques d'utilisation du site Carbora.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="statistiques_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a43e5b5a819fedbd12b8cf5421ba6985e" id="r_a43e5b5a819fedbd12b8cf5421ba6985e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a> = 'Statistiques - Carbora'</td></tr>
+<tr class="memitem:a9e2dd6b2592bb4f73c85eb284530e45b" id="r_a9e2dd6b2592bb4f73c85eb284530e45b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9e2dd6b2592bb4f73c85eb284530e45b">$theme_actif</a> = <a class="el" href="cookie__helper_8php.html#ac5245cd48efa7a670263a0b11493bb70">get_theme</a>()</td></tr>
+<tr class="memitem:a40dc2d349ba0ab31634e5e2dbebdd918" id="r_a40dc2d349ba0ab31634e5e2dbebdd918"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a40dc2d349ba0ab31634e5e2dbebdd918">$css_theme</a> = <a class="el" href="cookie__helper_8php.html#ae0c9a2e6fff6590ad46b023505bff4bb">get_css_theme</a>($theme_actif)</td></tr>
+<tr class="memitem:ab775c2e8a88c8a96807af8e1354777d7" id="r_ab775c2e8a88c8a96807af8e1354777d7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab775c2e8a88c8a96807af8e1354777d7">$nombreVisites</a> = <a class="el" href="csv__handler_8php.html#ae79ac27b2f7fba01d4d8d733de58064f">incrementer_hits</a>()</td></tr>
+<tr class="memitem:aafff38c6ccbe31ae7fc770b1fd9e4414" id="r_aafff38c6ccbe31ae7fc770b1fd9e4414"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aafff38c6ccbe31ae7fc770b1fd9e4414">$top_villes</a> = <a class="el" href="csv__handler_8php.html#a68dd3cb99b0321c8842d9a9aab850f6e">top_villes_consultees</a>(10)</td></tr>
+<tr class="memitem:a01f842cca823b5238f0bcceb01d0cdc6" id="r_a01f842cca823b5238f0bcceb01d0cdc6"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a01f842cca823b5238f0bcceb01d0cdc6">$total_consultations</a> = array_sum($top_villes)</td></tr>
+<tr class="memitem:a481394458b044bc7f8d4273a1743b94c" id="r_a481394458b044bc7f8d4273a1743b94c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a481394458b044bc7f8d4273a1743b94c">$max_villes</a> = !empty($top_villes) ? max($top_villes) : 1</td></tr>
+<tr class="memitem:a9132fe8e7f7fa9c78dfb0329e568a72a" id="r_a9132fe8e7f7fa9c78dfb0329e568a72a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9132fe8e7f7fa9c78dfb0329e568a72a">$stats_carb</a> = <a class="el" href="csv__handler_8php.html#a47b0c83958af6f00b2884433a963da81">stats_carburants</a>()</td></tr>
+<tr class="memitem:a122e6a537ce26b1c73d9bf57d64d7db1" id="r_a122e6a537ce26b1c73d9bf57d64d7db1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a122e6a537ce26b1c73d9bf57d64d7db1">$total_carb</a> = array_sum($stats_carb)</td></tr>
+<tr class="memitem:a4d35cf838d52ac9f8ddfb5cbcb2e5f84" id="r_a4d35cf838d52ac9f8ddfb5cbcb2e5f84"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4d35cf838d52ac9f8ddfb5cbcb2e5f84">$max_carb</a> = !empty($stats_carb) ? max($stats_carb) : 1</td></tr>
+<tr class="memitem:adf4d7789231b33103591a5765c2e17be" id="r_adf4d7789231b33103591a5765c2e17be"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#adf4d7789231b33103591a5765c2e17be">$stats_jours</a> = <a class="el" href="csv__handler_8php.html#ae46a17f2937af5689b2de8a4f4679974">stats_jours_semaine</a>()</td></tr>
+<tr class="memitem:ae25f847751f4870146be82db16c717a8" id="r_ae25f847751f4870146be82db16c717a8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae25f847751f4870146be82db16c717a8">$max_jours</a> = !empty($stats_jours) ? max($stats_jours) : 1</td></tr>
+<tr class="memitem:a7cc5fb9d31e3ca0025d8296b5093899d" id="r_a7cc5fb9d31e3ca0025d8296b5093899d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7cc5fb9d31e3ca0025d8296b5093899d">$stats_heures</a> = <a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>()</td></tr>
+<tr class="memitem:a1ea5637a9874070a4de63c18ab006c23" id="r_a1ea5637a9874070a4de63c18ab006c23"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1ea5637a9874070a4de63c18ab006c23">$max_heures</a> = !empty($<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>) ? max($<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>) : 1</td></tr>
+<tr class="memitem:a3e6c08ca0f2491cb7cfb54f570cef2b8" id="r_a3e6c08ca0f2491cb7cfb54f570cef2b8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3e6c08ca0f2491cb7cfb54f570cef2b8">$top_regions</a> = <a class="el" href="csv__handler_8php.html#aeb5f0d009299e9dc71b30b9418672add">top_regions_consultees</a>(13)</td></tr>
+<tr class="memitem:a09c2044502235185c092ff2f06525bb0" id="r_a09c2044502235185c092ff2f06525bb0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a09c2044502235185c092ff2f06525bb0">$max_regions</a> = !empty($top_regions) ? max($top_regions) : 1</td></tr>
+<tr class="memitem:a956f98966ba19c6046b3a075556a186b" id="r_a956f98966ba19c6046b3a075556a186b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a956f98966ba19c6046b3a075556a186b">$dernieres</a> = array_slice(array_reverse(<a class="el" href="csv__handler_8php.html#a05fb83972eb3a2628f88bad5bdb393f3">lire_consultations</a>()), 0, 10)</td></tr>
+<tr class="memitem:a08e1d2068cd89425dc0722e9dff32127" id="r_a08e1d2068cd89425dc0722e9dff32127"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a08e1d2068cd89425dc0722e9dff32127">$nb_villes_distinctes</a> = count(<a class="el" href="csv__handler_8php.html#a68dd3cb99b0321c8842d9a9aab850f6e">top_villes_consultees</a>(9999))</td></tr>
+<tr class="memitem:a99260b55783fc4e95aca21d5820d322d" id="r_a99260b55783fc4e95aca21d5820d322d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a99260b55783fc4e95aca21d5820d322d">$couleurs_carb</a></td></tr>
+<tr class="memitem:a0eacc0f3e4779f9e473a606c241fe973" id="r_a0eacc0f3e4779f9e473a606c241fe973"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0eacc0f3e4779f9e473a606c241fe973">$styles_extra</a> =</td></tr>
+<tr class="memitem:a331997df078c64b4083c4efcb1e6db1c" id="r_a331997df078c64b4083c4efcb1e6db1c"><td class="memItemLeft"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>(empty($top_villes)) Aucune consultation enregistrée&lt;/p &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a331997df078c64b4083c4efcb1e6db1c">else</a></td></tr>
+<tr class="memitem:a1b825ed14ae8554153c7ded5401ac420" id="r_a1b825ed14ae8554153c7ded5401ac420"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1b825ed14ae8554153c7ded5401ac420">$rang</a> =1</td></tr>
+<tr class="memitem:abc6f2cdd96a8d6e2cc2a9b7f7926e5c1" id="r_abc6f2cdd96a8d6e2cc2a9b7f7926e5c1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abc6f2cdd96a8d6e2cc2a9b7f7926e5c1">$classe</a> =$rang===1?'barre-or':($rang===2?'barre-argent':($rang===3?'barre-bronze':'barre-normal'))</td></tr>
+<tr class="memitem:a375509b95358f60bca6836faf0ef4127" id="r_a375509b95358f60bca6836faf0ef4127"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a375509b95358f60bca6836faf0ef4127">$med</a> =$rang===1?'1.':($rang===2?'2.':($rang===3?'3.':$rang.'.'))</td></tr>
+<tr class="memitem:a672d9707ef91db026c210f98cc601123" id="r_a672d9707ef91db026c210f98cc601123"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a672d9707ef91db026c210f98cc601123">endforeach</a></td></tr>
+<tr class="memitem:a82cd33ca97ff99f2fcc5e9c81d65251b" id="r_a82cd33ca97ff99f2fcc5e9c81d65251b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a></td></tr>
+<tr class="memitem:a74532306b561641f8047072a83746b35" id="r_a74532306b561641f8047072a83746b35"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a74532306b561641f8047072a83746b35">$ptot</a> =$total_carb&gt;0?round(($nb/$total_carb)*100,1):0</td></tr>
+<tr class="memitem:a84dc4c8563980496a5373fd9944e82bb" id="r_a84dc4c8563980496a5373fd9944e82bb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a84dc4c8563980496a5373fd9944e82bb">$col</a> =$couleurs_carb[$carb]??['bg'=&gt;'#1E3A8A','text'=&gt;'#EFF6FF','bar'=&gt;'#3B82F6']</td></tr>
+<tr class="memitem:a2f47637fc40de9af9fcd036cf8f1ea4e" id="r_a2f47637fc40de9af9fcd036cf8f1ea4e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2f47637fc40de9af9fcd036cf8f1ea4e">$est</a> =$nb===$max_jours&amp;&amp;$nb&gt;0</td></tr>
+<tr class="memitem:acc48e2007510c6efaab358a1afeb2668" id="r_acc48e2007510c6efaab358a1afeb2668"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acc48e2007510c6efaab358a1afeb2668">$mn</a> =array_search($max_jours,$stats_jours)</td></tr>
+<tr class="memitem:a8fd0b83353c1d12387bb47d55adb5439" id="r_a8fd0b83353c1d12387bb47d55adb5439"><td class="memItemLeft">$h&lt; 24;$h++):$nb=$<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>[$h];$pct=$max_heures &gt;(int) round(($nb/$max_heures) *100)&#160;</td><td class="memItemRight"><a class="el" href="#a8fd0b83353c1d12387bb47d55adb5439">$int</a> =$pct&gt;75?'heure-forte':($pct&gt;40?'heure-moyenne':($pct&gt;10?'heure-faible':'heure-nulle'))</td></tr>
+<tr class="memitem:ae8fdc27183f296411bac00ed522ee1ac" id="r_ae8fdc27183f296411bac00ed522ee1ac"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae8fdc27183f296411bac00ed522ee1ac">endfor</a></td></tr>
+<tr class="memitem:a936c055cfa438e3c100965b183a063a2" id="r_a936c055cfa438e3c100965b183a063a2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a936c055cfa438e3c100965b183a063a2">$hm</a> =array_search(max($<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>),$<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>)</td></tr>
+<tr class="memitem:a793db6316e3deedf5616060ed4d77dd2" id="r_a793db6316e3deedf5616060ed4d77dd2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a793db6316e3deedf5616060ed4d77dd2">$noms_regions</a></td></tr>
+<tr class="memitem:ac6b6584d99648e1bcd809d7628bfdd44" id="r_ac6b6584d99648e1bcd809d7628bfdd44"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac6b6584d99648e1bcd809d7628bfdd44">$reg_str</a> = (string)$reg</td></tr>
+<tr class="memitem:a11bef8d65cb67889c19805863ff7cae8" id="r_a11bef8d65cb67889c19805863ff7cae8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a11bef8d65cb67889c19805863ff7cae8">$nom_reg</a> = $noms_regions[$reg_str] ?? $reg_str</td></tr>
+<tr class="memitem:afe68e6fbe7acfbffc0af0c84a1996466" id="r_afe68e6fbe7acfbffc0af0c84a1996466"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> =http_build_query(['ville'=&gt;$c['ville'],'dept'=&gt;$c['departement'],'region'=&gt;$c['region']])</td></tr>
+<tr class="memitem:a3ab5adc061826f34357fcc0f66c1ef63" id="r_a3ab5adc061826f34357fcc0f66c1ef63"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3ab5adc061826f34357fcc0f66c1ef63">$label_btn</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Page de statistiques d'utilisation du site Carbora. </p>
+<dl class="section author"><dt>Auteur</dt><dd>BOUNAB Kahina - DEHOUCHE Ines </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.2 — Corrections accessibilité WAVE (contraste, liens redondants) </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+</div><a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="abc6f2cdd96a8d6e2cc2a9b7f7926e5c1" name="abc6f2cdd96a8d6e2cc2a9b7f7926e5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6f2cdd96a8d6e2cc2a9b7f7926e5c1">&#9670;&#160;</a></span>$classe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$classe =$rang===1?'barre-or':($rang===2?'barre-argent':($rang===3?'barre-bronze':'barre-normal'))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00194">194</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a84dc4c8563980496a5373fd9944e82bb" name="a84dc4c8563980496a5373fd9944e82bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84dc4c8563980496a5373fd9944e82bb">&#9670;&#160;</a></span>$col</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="carte_8php.html#ace4ad2ef1230246139becc3d203e110b">foreach</a>($dernieres as $idx=&gt; $c) !empty ( $c[ 'carburant'])? $c[ 'carburant'] $col =$couleurs_carb[$carb]??['bg'=&gt;'#1E3A8A','text'=&gt;'#EFF6FF','bar'=&gt;'#3B82F6']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00220">220</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a99260b55783fc4e95aca21d5820d322d" name="a99260b55783fc4e95aca21d5820d322d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99260b55783fc4e95aca21d5820d322d">&#9670;&#160;</a></span>$couleurs_carb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$couleurs_carb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">               = [</div>
+<div class="line">    <span class="stringliteral">&#39;SP95&#39;</span>   =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#92400E&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#FFFBEB&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#F59E0B&#39;</span>],</div>
+<div class="line">    <span class="stringliteral">&#39;SP98&#39;</span>   =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#831843&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#FDF2F8&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#EC4899&#39;</span>],</div>
+<div class="line">    <span class="stringliteral">&#39;E10&#39;</span>    =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#064E3B&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#ECFDF5&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#10B981&#39;</span>],</div>
+<div class="line">    <span class="stringliteral">&#39;E85&#39;</span>    =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#4C1D95&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#F5F3FF&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#8B5CF6&#39;</span>],</div>
+<div class="line">    <span class="stringliteral">&#39;Gazole&#39;</span> =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#1E3A8A&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#EFF6FF&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#3B82F6&#39;</span>],</div>
+<div class="line">    <span class="stringliteral">&#39;GPLc&#39;</span>   =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#881337&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#FFF1F2&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#F43F5E&#39;</span>],</div>
+<div class="line">    <span class="stringliteral">&#39;Tous&#39;</span>   =&gt; [<span class="stringliteral">&#39;bg&#39;</span>=&gt;<span class="stringliteral">&#39;#334155&#39;</span>,<span class="stringliteral">&#39;text&#39;</span>=&gt;<span class="stringliteral">&#39;#F8FAFC&#39;</span>,<span class="stringliteral">&#39;bar&#39;</span>=&gt;<span class="stringliteral">&#39;#94A3B8&#39;</span>],</div>
+<div class="line">]</div>
+</div><!-- fragment -->
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00031">31</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a40dc2d349ba0ab31634e5e2dbebdd918" name="a40dc2d349ba0ab31634e5e2dbebdd918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40dc2d349ba0ab31634e5e2dbebdd918">&#9670;&#160;</a></span>$css_theme</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$css_theme = <a class="el" href="cookie__helper_8php.html#ae0c9a2e6fff6590ad46b023505bff4bb">get_css_theme</a>($theme_actif)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00015">15</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a956f98966ba19c6046b3a075556a186b" name="a956f98966ba19c6046b3a075556a186b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956f98966ba19c6046b3a075556a186b">&#9670;&#160;</a></span>$dernieres</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$dernieres = array_slice(array_reverse(<a class="el" href="csv__handler_8php.html#a05fb83972eb3a2628f88bad5bdb393f3">lire_consultations</a>()), 0, 10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00029">29</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a2f47637fc40de9af9fcd036cf8f1ea4e" name="a2f47637fc40de9af9fcd036cf8f1ea4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f47637fc40de9af9fcd036cf8f1ea4e">&#9670;&#160;</a></span>$est</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$est =$nb===$max_jours&amp;&amp;$nb&gt;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00243">243</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a936c055cfa438e3c100965b183a063a2" name="a936c055cfa438e3c100965b183a063a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936c055cfa438e3c100965b183a063a2">&#9670;&#160;</a></span>$hm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$hm =array_search(max($<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>),$<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00279">279</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a8fd0b83353c1d12387bb47d55adb5439" name="a8fd0b83353c1d12387bb47d55adb5439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd0b83353c1d12387bb47d55adb5439">&#9670;&#160;</a></span>$int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$h&lt; 24; $h++):$nb=$<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>[ $h]; $pct=$max_heures &gt; (int) round(( $nb/ $max_heures) *100) $int =$pct&gt;75?'heure-forte':($pct&gt;40?'heure-moyenne':($pct&gt;10?'heure-faible':'heure-nulle'))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00265">265</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a3ab5adc061826f34357fcc0f66c1ef63" name="a3ab5adc061826f34357fcc0f66c1ef63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab5adc061826f34357fcc0f66c1ef63">&#9670;&#160;</a></span>$label_btn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$label_btn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= <span class="stringliteral">&#39;Voir les prix à &#39;</span> . htmlspecialchars($c[<span class="stringliteral">&#39;ville&#39;</span>], ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>)</div>
+<div class="line">. <span class="stringliteral">&#39; (&#39;</span> . htmlspecialchars(<a class="code hl_variable" href="api__proxy_8php.html#a9f47e3450e8193ca3c87c7a1cba89d73">$carb</a>, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>) . <span class="charliteral">&#39;)&#39;</span></div>
+<div class="line">. <span class="stringliteral">&#39; — &#39;</span> . htmlspecialchars($c[<span class="stringliteral">&#39;horodatage&#39;</span>], ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>)</div>
+<div class="line">. <span class="stringliteral">&#39; n°&#39;</span> . ($idx + 1)</div>
+<div class="ttc" id="aapi__proxy_8php_html_a9f47e3450e8193ca3c87c7a1cba89d73"><div class="ttname"><a href="api__proxy_8php.html#a9f47e3450e8193ca3c87c7a1cba89d73">$carb</a></div><div class="ttdeci">$carb</div><div class="ttdef"><b>Definition</b> <a href="api__proxy_8php_source.html#l00051">api_proxy.php:51</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00341">341</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a4d35cf838d52ac9f8ddfb5cbcb2e5f84" name="a4d35cf838d52ac9f8ddfb5cbcb2e5f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d35cf838d52ac9f8ddfb5cbcb2e5f84">&#9670;&#160;</a></span>$max_carb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$max_carb = !empty($stats_carb) ? max($stats_carb) : 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00022">22</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a1ea5637a9874070a4de63c18ab006c23" name="a1ea5637a9874070a4de63c18ab006c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea5637a9874070a4de63c18ab006c23">&#9670;&#160;</a></span>$max_heures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$max_heures = !empty($<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>) ? max($<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>) : 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00026">26</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="ae25f847751f4870146be82db16c717a8" name="ae25f847751f4870146be82db16c717a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25f847751f4870146be82db16c717a8">&#9670;&#160;</a></span>$max_jours</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$max_jours = !empty($stats_jours) ? max($stats_jours) : 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00024">24</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a09c2044502235185c092ff2f06525bb0" name="a09c2044502235185c092ff2f06525bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c2044502235185c092ff2f06525bb0">&#9670;&#160;</a></span>$max_regions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$max_regions = !empty($top_regions) ? max($top_regions) : 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00028">28</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a481394458b044bc7f8d4273a1743b94c" name="a481394458b044bc7f8d4273a1743b94c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481394458b044bc7f8d4273a1743b94c">&#9670;&#160;</a></span>$max_villes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$max_villes = !empty($top_villes) ? max($top_villes) : 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00019">19</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a375509b95358f60bca6836faf0ef4127" name="a375509b95358f60bca6836faf0ef4127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375509b95358f60bca6836faf0ef4127">&#9670;&#160;</a></span>$med</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$med =$rang===1?'1.':($rang===2?'2.':($rang===3?'3.':$rang.'.'))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00195">195</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="acc48e2007510c6efaab358a1afeb2668" name="acc48e2007510c6efaab358a1afeb2668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc48e2007510c6efaab358a1afeb2668">&#9670;&#160;</a></span>$mn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mn =array_search($max_jours,$stats_jours)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00252">252</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a08e1d2068cd89425dc0722e9dff32127" name="a08e1d2068cd89425dc0722e9dff32127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e1d2068cd89425dc0722e9dff32127">&#9670;&#160;</a></span>$nb_villes_distinctes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nb_villes_distinctes = count(<a class="el" href="csv__handler_8php.html#a68dd3cb99b0321c8842d9a9aab850f6e">top_villes_consultees</a>(9999))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00030">30</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a11bef8d65cb67889c19805863ff7cae8" name="a11bef8d65cb67889c19805863ff7cae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11bef8d65cb67889c19805863ff7cae8">&#9670;&#160;</a></span>$nom_reg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nom_reg = $noms_regions[$reg_str] ?? $reg_str</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00302">302</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="ab775c2e8a88c8a96807af8e1354777d7" name="ab775c2e8a88c8a96807af8e1354777d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab775c2e8a88c8a96807af8e1354777d7">&#9670;&#160;</a></span>$nombreVisites</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nombreVisites = <a class="el" href="csv__handler_8php.html#ae79ac27b2f7fba01d4d8d733de58064f">incrementer_hits</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00016">16</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a793db6316e3deedf5616060ed4d77dd2" name="a793db6316e3deedf5616060ed4d77dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793db6316e3deedf5616060ed4d77dd2">&#9670;&#160;</a></span>$noms_regions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$noms_regions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">              = [</div>
+<div class="line">    <span class="stringliteral">&#39;11&#39;</span>=&gt;<span class="stringliteral">&#39;Île-de-France&#39;</span>,<span class="stringliteral">&#39;24&#39;</span>=&gt;<span class="stringliteral">&#39;Centre-Val de Loire&#39;</span>,<span class="stringliteral">&#39;27&#39;</span>=&gt;<span class="stringliteral">&#39;Bourgogne-Franche-Comté&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;28&#39;</span>=&gt;<span class="stringliteral">&#39;Normandie&#39;</span>,<span class="stringliteral">&#39;32&#39;</span>=&gt;<span class="stringliteral">&#39;Hauts-de-France&#39;</span>,<span class="stringliteral">&#39;44&#39;</span>=&gt;<span class="stringliteral">&#39;Grand Est&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;52&#39;</span>=&gt;<span class="stringliteral">&#39;Pays de la Loire&#39;</span>,<span class="stringliteral">&#39;53&#39;</span>=&gt;<span class="stringliteral">&#39;Bretagne&#39;</span>,<span class="stringliteral">&#39;75&#39;</span>=&gt;<span class="stringliteral">&#39;Nouvelle-Aquitaine&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;76&#39;</span>=&gt;<span class="stringliteral">&#39;Occitanie&#39;</span>,<span class="stringliteral">&#39;84&#39;</span>=&gt;<span class="stringliteral">&#39;Auvergne-Rhône-Alpes&#39;</span>,<span class="stringliteral">&#39;93&#39;</span>=&gt;<span class="stringliteral">&#39;Provence-Alpes-Côte d\&#39;Azur&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;94&#39;</span>=&gt;<span class="stringliteral">&#39;Corse&#39;</span>,</div>
+<div class="line">]</div>
+</div><!-- fragment -->
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00288">288</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="afe68e6fbe7acfbffc0af0c84a1996466" name="afe68e6fbe7acfbffc0af0c84a1996466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe68e6fbe7acfbffc0af0c84a1996466">&#9670;&#160;</a></span>$params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$params =http_build_query(['ville'=&gt;$c['ville'],'dept'=&gt;$c['departement'],'region'=&gt;$c['region']])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00340">340</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a74532306b561641f8047072a83746b35" name="a74532306b561641f8047072a83746b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74532306b561641f8047072a83746b35">&#9670;&#160;</a></span>$ptot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ptot =$total_carb&gt;0?round(($nb/$total_carb)*100,1):0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00219">219</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a1b825ed14ae8554153c7ded5401ac420" name="a1b825ed14ae8554153c7ded5401ac420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b825ed14ae8554153c7ded5401ac420">&#9670;&#160;</a></span>$rang</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$rang =1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00192">192</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="ac6b6584d99648e1bcd809d7628bfdd44" name="ac6b6584d99648e1bcd809d7628bfdd44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b6584d99648e1bcd809d7628bfdd44">&#9670;&#160;</a></span>$reg_str</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$reg_str = (string)$reg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00301">301</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a9132fe8e7f7fa9c78dfb0329e568a72a" name="a9132fe8e7f7fa9c78dfb0329e568a72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9132fe8e7f7fa9c78dfb0329e568a72a">&#9670;&#160;</a></span>$stats_carb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stats_carb = <a class="el" href="csv__handler_8php.html#a47b0c83958af6f00b2884433a963da81">stats_carburants</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00020">20</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a7cc5fb9d31e3ca0025d8296b5093899d" name="a7cc5fb9d31e3ca0025d8296b5093899d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc5fb9d31e3ca0025d8296b5093899d">&#9670;&#160;</a></span>$stats_heures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a> = <a class="el" href="csv__handler_8php.html#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00025">25</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="adf4d7789231b33103591a5765c2e17be" name="adf4d7789231b33103591a5765c2e17be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4d7789231b33103591a5765c2e17be">&#9670;&#160;</a></span>$stats_jours</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stats_jours = <a class="el" href="csv__handler_8php.html#ae46a17f2937af5689b2de8a4f4679974">stats_jours_semaine</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00023">23</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a0eacc0f3e4779f9e473a606c241fe973" name="a0eacc0f3e4779f9e473a606c241fe973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eacc0f3e4779f9e473a606c241fe973">&#9670;&#160;</a></span>$styles_extra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$styles_extra =</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00041">41</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a9e2dd6b2592bb4f73c85eb284530e45b" name="a9e2dd6b2592bb4f73c85eb284530e45b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2dd6b2592bb4f73c85eb284530e45b">&#9670;&#160;</a></span>$theme_actif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$theme_actif = <a class="el" href="cookie__helper_8php.html#ac5245cd48efa7a670263a0b11493bb70">get_theme</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00014">14</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a43e5b5a819fedbd12b8cf5421ba6985e" name="a43e5b5a819fedbd12b8cf5421ba6985e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e5b5a819fedbd12b8cf5421ba6985e">&#9670;&#160;</a></span>$titre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$titre = 'Statistiques - Carbora'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00009">9</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a3e6c08ca0f2491cb7cfb54f570cef2b8" name="a3e6c08ca0f2491cb7cfb54f570cef2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6c08ca0f2491cb7cfb54f570cef2b8">&#9670;&#160;</a></span>$top_regions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$top_regions = <a class="el" href="csv__handler_8php.html#aeb5f0d009299e9dc71b30b9418672add">top_regions_consultees</a>(13)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00027">27</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="aafff38c6ccbe31ae7fc770b1fd9e4414" name="aafff38c6ccbe31ae7fc770b1fd9e4414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafff38c6ccbe31ae7fc770b1fd9e4414">&#9670;&#160;</a></span>$top_villes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$top_villes = <a class="el" href="csv__handler_8php.html#a68dd3cb99b0321c8842d9a9aab850f6e">top_villes_consultees</a>(10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00017">17</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a122e6a537ce26b1c73d9bf57d64d7db1" name="a122e6a537ce26b1c73d9bf57d64d7db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122e6a537ce26b1c73d9bf57d64d7db1">&#9670;&#160;</a></span>$total_carb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$total_carb = array_sum($stats_carb)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00021">21</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a01f842cca823b5238f0bcceb01d0cdc6" name="a01f842cca823b5238f0bcceb01d0cdc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f842cca823b5238f0bcceb01d0cdc6">&#9670;&#160;</a></span>$total_consultations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$total_consultations = array_sum($top_villes)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00018">18</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a331997df078c64b4083c4efcb1e6db1c" name="a331997df078c64b4083c4efcb1e6db1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331997df078c64b4083c4efcb1e6db1c">&#9670;&#160;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a> (empty( $dernieres)) Aucune consultation&lt;a href=&quot;index.php&quot;&gt; Lancez une recherche&lt;/a&gt;&lt;/p&gt; else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00189">189</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="ae8fdc27183f296411bac00ed522ee1ac" name="ae8fdc27183f296411bac00ed522ee1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8fdc27183f296411bac00ed522ee1ac">&#9670;&#160;</a></span>endfor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endfor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00271">271</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a672d9707ef91db026c210f98cc601123" name="a672d9707ef91db026c210f98cc601123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672d9707ef91db026c210f98cc601123">&#9670;&#160;</a></span>endforeach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endforeach</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00206">206</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+<a id="a82cd33ca97ff99f2fcc5e9c81d65251b" name="a82cd33ca97ff99f2fcc5e9c81d65251b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cd33ca97ff99f2fcc5e9c81d65251b">&#9670;&#160;</a></span>endif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endif</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="statistiques_8php_source.html#l00208">208</a> du fichier <a class="el" href="statistiques_8php_source.html">statistiques.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="statistiques_8php.html">statistiques.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

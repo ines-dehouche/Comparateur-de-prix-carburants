@@ -1,0 +1,69 @@
+/* ============================================
+   theme_nuit.css — Charte graphique MODE NUIT
+   Fond sombre, texte clair → lisibilité maximale
+   ============================================ */
+
+body.theme-nuit {
+    background-color: #0F172A;
+    color: #F1F5F9;
+}
+
+/* Sections (les "cartes") : fond légèrement plus clair que le body */
+body.theme-nuit section {
+    background-color: #1E293B;
+    color: #F1F5F9;
+    border: 1px solid #334155;
+}
+
+/* Titres h1, h2, h3 */
+body.theme-nuit h1,
+body.theme-nuit h2,
+body.theme-nuit h3 {
+    color: #F8FAFC;
+}
+
+/* Paragraphes et texte courant */
+body.theme-nuit p {
+    color: #E2E8F0;
+}
+
+/* strong (ex: "Titre japonais :", "Année de sortie :")
+   IMPORTANT : c'est ce qui était illisible en mode nuit ! */
+body.theme-nuit strong {
+    color: #F8FAFC;
+}
+
+/* Texte en japonais et valeurs après le strong */
+body.theme-nuit article p,
+body.theme-nuit li {
+    color: #E2E8F0;
+}
+
+/* Texte secondaire (figcaption, légendes) */
+body.theme-nuit figcaption {
+    color: #94A3B8;
+}
+
+/* Liens */
+body.theme-nuit a {
+    color: #60A5FA;
+}
+body.theme-nuit a:hover {
+    color: #F97316;
+}
+
+/* Footer reste sombre dans les deux thèmes */
+body.theme-nuit .site-footer {
+    background-color: #020617;
+}
+
+/* Navigation : liens toujours blancs (pas bleus comme les liens normaux) */
+body.theme-nuit .main-nav a {
+    color: #FFFFFF;
+}
+
+body.theme-nuit .main-nav a:hover,
+body.theme-nuit .main-nav a:focus {
+    background-color: #F97316;
+    color: #FFFFFF;
+}

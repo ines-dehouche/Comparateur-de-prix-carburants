@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora:  Fichier source de includes/header.inc.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('header_8inc_8php_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">header.inc.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="header_8inc_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>declare(strict_types=1);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>require_once __DIR__ . <span class="stringliteral">&#39;/config.inc.php&#39;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>require_once <a class="code hl_variable" href="config_8inc_8php.html#aa063c36b1629425a25a31d20b5da4ecf">LIB_PATH</a> . <span class="stringliteral">&#39;/cookie_helper.php&#39;</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// 1. Traiter le changement de thème en PREMIER (avant tout output)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_function" href="cookie__helper_8php.html#ac377a20d2e4d16e5e945cea42ab5c5be">traiter_changement_theme</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// 2. Lire le thème actif (jour / nuit / défaut)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="header_8inc_8php.html#a9e2dd6b2592bb4f73c85eb284530e45b">   23</a></span><a class="code hl_variable" href="header_8inc_8php.html#a9e2dd6b2592bb4f73c85eb284530e45b">$theme_actif</a> = <a class="code hl_function" href="cookie__helper_8php.html#ac5245cd48efa7a670263a0b11493bb70">get_theme</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="header_8inc_8php.html#a40dc2d349ba0ab31634e5e2dbebdd918">   24</a></span><a class="code hl_variable" href="header_8inc_8php.html#a40dc2d349ba0ab31634e5e2dbebdd918">$css_theme</a>   = <a class="code hl_function" href="cookie__helper_8php.html#ae0c9a2e6fff6590ad46b023505bff4bb">get_css_theme</a>(<a class="code hl_variable" href="header_8inc_8php.html#a9e2dd6b2592bb4f73c85eb284530e45b">$theme_actif</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// 3. Titre de page (défaut : nom du site)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordflow">if</span> (!isset(<a class="code hl_variable" href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a>) || trim((<span class="keywordtype">string</span>) <a class="code hl_variable" href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a>) === <span class="stringliteral">&#39;&#39;</span>) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_variable" href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a> = <a class="code hl_variable" href="config_8inc_8php.html#af94a4d6591c65fe439abbc76af8a4916">SITE_NAME</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">   30</a></span><span class="keywordflow">if</span> (!isset(<a class="code hl_variable" href="carte_8php.html#a044ec22644ac7a2dad8b95615d920917">$styles_extra</a>)) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="carte_8php.html#a044ec22644ac7a2dad8b95615d920917">$styles_extra</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>?&gt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>&lt;!DOCTYPE html&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>&lt;html lang=<span class="stringliteral">&quot;fr&quot;</span>&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>&lt;head&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    &lt;meta charset=<span class="stringliteral">&quot;utf-8&quot;</span>/&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    &lt;meta name=<span class="stringliteral">&quot;viewport&quot;</span> content=<span class="stringliteral">&quot;width=device-width, initial-scale=1&quot;</span>/&gt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    &lt;title&gt;&lt;?php echo htmlspecialchars(<a class="code hl_variable" href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a>, ENT_QUOTES, <span class="stringliteral">&#39;UTF-8&#39;</span>); ?&gt;&lt;/title&gt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    &lt;meta name=<span class="stringliteral">&quot;description&quot;</span> content=<span class="stringliteral">&quot;&lt;?php echo htmlspecialchars(SITE_DESCRIPTION, ENT_QUOTES, &#39;UTF-8&#39;); ?&gt;&quot;</span>/&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    &lt;link rel=<span class="stringliteral">&quot;icon&quot;</span> href=<span class="stringliteral">&quot;&lt;?php echo FAVICON_PATH; ?&gt;&quot;</span>/&gt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    &lt;!-- Feuille CSS de base --&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    &lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> href=<span class="stringliteral">&quot;&lt;?php echo MAIN_CSS_PATH; ?&gt;&quot;</span>/&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    &lt;!-- Feuille CSS du thème actif (jour ou nuit) --&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    &lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> href=<span class="stringliteral">&quot;&lt;?php echo htmlspecialchars($css_theme, ENT_QUOTES, &#39;UTF-8&#39;); ?&gt;&quot;</span>/&gt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    &lt;?php <span class="keywordflow">if</span> (<a class="code hl_variable" href="carte_8php.html#a044ec22644ac7a2dad8b95615d920917">$styles_extra</a> !== <span class="stringliteral">&#39;&#39;</span>): ?&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    &lt;!-- Styles CSS internes spécifiques à cette page --&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    &lt;style&gt;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    &lt;?php echo <a class="code hl_variable" href="carte_8php.html#a044ec22644ac7a2dad8b95615d920917">$styles_extra</a>; ?&gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    &lt;/style&gt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="header_8inc_8php.html#a077af51685defd4b769b401f8847c2ac">   51</a></span>    &lt;?php <a class="code hl_variable" href="carte_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>&lt;/head&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>&lt;body <span class="keyword">class</span>=<span class="stringliteral">&quot;theme-&lt;?php echo htmlspecialchars($theme_actif, ENT_QUOTES, &#39;UTF-8&#39;); ?&gt;&quot;</span>&gt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>&lt;header <span class="keyword">class</span>=<span class="stringliteral">&quot;site-header&quot;</span>&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;wrapper header-container&quot;</span>&gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        &lt;a href=<span class="stringliteral">&quot;index.php&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;brand&quot;</span> aria-label=<span class="stringliteral">&quot;Carbora - Accueil&quot;</span>&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;brand-text&quot;</span>&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                &lt;img src=<span class="stringliteral">&quot;&lt;?php echo LOGO_PATH; ?&gt;&quot;</span> alt=<span class="stringliteral">&quot;Logo Carbora&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;brand-logo&quot;</span> width=<span class="stringliteral">&quot;170&quot;</span> height=<span class="stringliteral">&quot;113&quot;</span>/&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                &lt;span <span class="keyword">class</span>=<span class="stringliteral">&quot;brand-tagline&quot;</span>&gt;&lt;?php echo <a class="code hl_variable" href="config_8inc_8php.html#ac1b739f48fa7746cac7fdf34ae4e8cfa">SITE_TAGLINE</a>; ?&gt;&lt;/span&gt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        &lt;/a&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        &lt;nav aria-label=<span class="stringliteral">&quot;Navigation principale&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;main-nav&quot;</span>&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            &lt;ul&gt;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                &lt;li&gt;&lt;a href=<span class="stringliteral">&quot;index.php&quot;</span>&gt;Accueil&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                &lt;li&gt;&lt;a href=<span class="stringliteral">&quot;carte.php&quot;</span>&gt;Carte&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                &lt;li&gt;&lt;a href=<span class="stringliteral">&quot;resultats.php&quot;</span>&gt;Résultats&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                &lt;li&gt;&lt;a href=<span class="stringliteral">&quot;statistiques.php&quot;</span>&gt;Statistiques&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                &lt;li&gt;&lt;a href=<span class="stringliteral">&quot;tech.php&quot;</span>&gt;Tech&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            &lt;/ul&gt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        &lt;/nav&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        &lt;!-- Boutons de changement de thème (images cliquables) --&gt;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;theme-switcher&quot;</span>&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            &lt;?php <span class="keywordflow">if</span> (<a class="code hl_variable" href="header_8inc_8php.html#a9e2dd6b2592bb4f73c85eb284530e45b">$theme_actif</a> === <span class="stringliteral">&#39;nuit&#39;</span>): ?&gt;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                &lt;a href=<span class="stringliteral">&quot;?theme=jour&quot;</span> title=<span class="stringliteral">&quot;Passer en mode jour&quot;</span>&gt;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    &lt;img src=<span class="stringliteral">&quot;assets/img/soleil.png&quot;</span> alt=<span class="stringliteral">&quot;Mode jour&quot;</span> width=<span class="stringliteral">&quot;32&quot;</span> height=<span class="stringliteral">&quot;32&quot;</span>/&gt;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                &lt;/a&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            &lt;?php <span class="keywordflow">else</span>: ?&gt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                &lt;a href=<span class="stringliteral">&quot;?theme=nuit&quot;</span> title=<span class="stringliteral">&quot;Passer en mode nuit&quot;</span>&gt;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    &lt;img src=<span class="stringliteral">&quot;assets/img/lune.png&quot;</span> alt=<span class="stringliteral">&quot;Mode nuit&quot;</span> width=<span class="stringliteral">&quot;32&quot;</span> height=<span class="stringliteral">&quot;32&quot;</span>/&gt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                &lt;/a&gt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            &lt;?php <a class="code hl_variable" href="carte_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    &lt;/div&gt;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>&lt;/header&gt;</div>
+<div class="ttc" id="acarte_8php_html_a044ec22644ac7a2dad8b95615d920917"><div class="ttname"><a href="carte_8php.html#a044ec22644ac7a2dad8b95615d920917">$styles_extra</a></div><div class="ttdeci">foreach($regions as $r) $styles_extra</div><div class="ttdef"><b>Definition</b> <a href="carte_8php_source.html#l00043">carte.php:43</a></div></div>
+<div class="ttc" id="acarte_8php_html_a43e5b5a819fedbd12b8cf5421ba6985e"><div class="ttname"><a href="carte_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a></div><div class="ttdeci">$titre</div><div class="ttdef"><b>Definition</b> <a href="carte_8php_source.html#l00019">carte.php:19</a></div></div>
+<div class="ttc" id="acarte_8php_html_a82cd33ca97ff99f2fcc5e9c81d65251b"><div class="ttname"><a href="carte_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a></div><div class="ttdeci">endif</div><div class="ttdef"><b>Definition</b> <a href="carte_8php_source.html#l00512">carte.php:512</a></div></div>
+<div class="ttc" id="aconfig_8inc_8php_html_aa063c36b1629425a25a31d20b5da4ecf"><div class="ttname"><a href="config_8inc_8php.html#aa063c36b1629425a25a31d20b5da4ecf">LIB_PATH</a></div><div class="ttdeci">const LIB_PATH</div><div class="ttdef"><b>Definition</b> <a href="config_8inc_8php_source.html#l00017">config.inc.php:17</a></div></div>
+<div class="ttc" id="aconfig_8inc_8php_html_ac1b739f48fa7746cac7fdf34ae4e8cfa"><div class="ttname"><a href="config_8inc_8php.html#ac1b739f48fa7746cac7fdf34ae4e8cfa">SITE_TAGLINE</a></div><div class="ttdeci">const SITE_TAGLINE</div><div class="ttdef"><b>Definition</b> <a href="config_8inc_8php_source.html#l00012">config.inc.php:12</a></div></div>
+<div class="ttc" id="aconfig_8inc_8php_html_af94a4d6591c65fe439abbc76af8a4916"><div class="ttname"><a href="config_8inc_8php.html#af94a4d6591c65fe439abbc76af8a4916">SITE_NAME</a></div><div class="ttdeci">const SITE_NAME</div><div class="ttdef"><b>Definition</b> <a href="config_8inc_8php_source.html#l00011">config.inc.php:11</a></div></div>
+<div class="ttc" id="acookie__helper_8php_html_ac377a20d2e4d16e5e945cea42ab5c5be"><div class="ttname"><a href="cookie__helper_8php.html#ac377a20d2e4d16e5e945cea42ab5c5be">traiter_changement_theme</a></div><div class="ttdeci">traiter_changement_theme()</div><div class="ttdef"><b>Definition</b> <a href="cookie__helper_8php_source.html#l00101">cookie_helper.php:101</a></div></div>
+<div class="ttc" id="acookie__helper_8php_html_ac5245cd48efa7a670263a0b11493bb70"><div class="ttname"><a href="cookie__helper_8php.html#ac5245cd48efa7a670263a0b11493bb70">get_theme</a></div><div class="ttdeci">get_theme()</div><div class="ttdef"><b>Definition</b> <a href="cookie__helper_8php_source.html#l00029">cookie_helper.php:29</a></div></div>
+<div class="ttc" id="acookie__helper_8php_html_ae0c9a2e6fff6590ad46b023505bff4bb"><div class="ttname"><a href="cookie__helper_8php.html#ae0c9a2e6fff6590ad46b023505bff4bb">get_css_theme</a></div><div class="ttdeci">get_css_theme(string $theme)</div><div class="ttdef"><b>Definition</b> <a href="cookie__helper_8php_source.html#l00089">cookie_helper.php:89</a></div></div>
+<div class="ttc" id="aheader_8inc_8php_html_a40dc2d349ba0ab31634e5e2dbebdd918"><div class="ttname"><a href="header_8inc_8php.html#a40dc2d349ba0ab31634e5e2dbebdd918">$css_theme</a></div><div class="ttdeci">$css_theme</div><div class="ttdef"><b>Definition</b> <a href="#l00024">header.inc.php:24</a></div></div>
+<div class="ttc" id="aheader_8inc_8php_html_a9e2dd6b2592bb4f73c85eb284530e45b"><div class="ttname"><a href="header_8inc_8php.html#a9e2dd6b2592bb4f73c85eb284530e45b">$theme_actif</a></div><div class="ttdeci">$theme_actif</div><div class="ttdef"><b>Definition</b> <a href="#l00023">header.inc.php:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a href="header_8inc_8php.html">header.inc.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

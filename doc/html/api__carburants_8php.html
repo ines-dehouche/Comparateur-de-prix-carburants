@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier lib/api_carburants.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('api__carburants_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier api_carburants.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interaction avec l'API officielle des prix des carburants.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="api__carburants_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a55f368577b147333846481de4c0c5c4c" id="r_a55f368577b147333846481de4c0c5c4c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a55f368577b147333846481de4c0c5c4c">recuperer_stations</a> (string $ville, string $dept, string $carburant='')</td></tr>
+<tr class="memitem:ae9523dc0fc044d8b52903bcf388f6c45" id="r_ae9523dc0fc044d8b52903bcf388f6c45"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae9523dc0fc044d8b52903bcf388f6c45">normaliser_stations</a> (array $records, string $carburant='')</td></tr>
+<tr class="memitem:add6cd80ea7cb03b9de50cd71bb32814f" id="r_add6cd80ea7cb03b9de50cd71bb32814f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#add6cd80ea7cb03b9de50cd71bb32814f">marquer_prix_minimum</a> (array $stations)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a62abcc92d59ea865c8da8b5d7d8f6b81" id="r_a62abcc92d59ea865c8da8b5d7d8f6b81"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a62abcc92d59ea865c8da8b5d7d8f6b81">API_CARBURANTS_URL</a> = 'https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/prix-des-carburants-en-france-flux-instantane-v2/records/'</td></tr>
+<tr class="memitem:a177fb4ebfa680fecc57faf4a26bbfa5f" id="r_a177fb4ebfa680fecc57faf4a26bbfa5f"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a177fb4ebfa680fecc57faf4a26bbfa5f">API_LIMIT</a> = 100</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Interaction avec l'API officielle des prix des carburants. </p>
+<p>Source : <a href="https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/">https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/</a> prix-des-carburants-en-france-flux-instantane-v2/records/</p>
+<p>L'API retourne des enregistrements JSON. Chaque enregistrement correspond à une station service avec ses prix pour différents carburants.</p>
+<dl class="section author"><dt>Auteur</dt><dd>BOUNAB Kahina - DEHOUCHE Ines </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="api__carburants_8php_source.html">api_carburants.php</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="add6cd80ea7cb03b9de50cd71bb32814f" name="add6cd80ea7cb03b9de50cd71bb32814f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6cd80ea7cb03b9de50cd71bb32814f">&#9670;&#160;</a></span>marquer_prix_minimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">marquer_prix_minimum </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$stations</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Marque pour chaque station si son prix est le minimum de la colonne.</p>
+<p>Permet de mettre en évidence visuellement le prix le plus bas par type de carburant dans le tableau des résultats.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$stations</td><td>Tableau de stations normalisées </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array Même tableau avec la clé 'est_minimum' renseignée </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="api__carburants_8php_source.html#l00191">191</a> du fichier <a class="el" href="api__carburants_8php_source.html">api_carburants.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="api__proxy_8php_source.html#l00051">$carb</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+<a id="ae9523dc0fc044d8b52903bcf388f6c45" name="ae9523dc0fc044d8b52903bcf388f6c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9523dc0fc044d8b52903bcf388f6c45">&#9670;&#160;</a></span>normaliser_stations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">normaliser_stations </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$records</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$carburant</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Normalise les enregistrements bruts de l'API en un tableau uniforme.</p>
+<p>Extrait pour chaque station :</p><ul>
+<li>son nom, adresse, ville</li>
+<li>ses prix par carburant (SP95, SP98, E10, E85, Gazole, GPLc)</li>
+<li>ses services disponibles</li>
+</ul>
+<p>Si un filtre carburant est précisé, ne garde que les stations proposant ce carburant.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$records</td><td>Tableau brut des enregistrements API </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$carburant</td><td>Filtre carburant (vide = tous) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;int, array&gt; Tableau de stations normalisées </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="api__carburants_8php_source.html#l00118">118</a> du fichier <a class="el" href="api__carburants_8php_source.html">api_carburants.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+<a id="a55f368577b147333846481de4c0c5c4c" name="a55f368577b147333846481de4c0c5c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f368577b147333846481de4c0c5c4c">&#9670;&#160;</a></span>recuperer_stations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">recuperer_stations </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$ville</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$dept</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$carburant</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère les stations service et leurs prix depuis l'API gouvernementale.</p>
+<p>Construit la requête selon les paramètres fournis (ville, département, carburant), appelle l'API, puis normalise les résultats.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$ville</td><td>Nom de la ville (peut être vide) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dept</td><td>Code du département (peut être vide) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$carburant</td><td>Nom du carburant à filtrer (peut être vide) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array{succes: bool, stations: array, message: string} 'succes' : true si la requête a réussi 'stations' : tableau de stations normalisées 'message' : message d'erreur éventuel </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="api__carburants_8php_source.html#l00041">41</a> du fichier <a class="el" href="api__carburants_8php_source.html">api_carburants.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="api__proxy_8php_source.html#l00113">$data</a>, <a class="el" href="communes_8php_source.html#l00021">$dept</a>, <a class="el" href="api__proxy_8php_source.html#l00068">$params</a>, <a class="el" href="api__proxy_8php_source.html#l00104">$url</a>, <a class="el" href="api__proxy_8php_source.html#l00050">$ville</a>, <a class="el" href="api__carburants_8php_source.html#l00022">API_CARBURANTS_URL</a>, <a class="el" href="api__carburants_8php_source.html#l00025">API_LIMIT</a>, <a class="el" href="http__helper_8php_source.html#l00017">fetchJsonFromUrl()</a>, <a class="el" href="api__carburants_8php_source.html#l00191">marquer_prix_minimum()</a>, et <a class="el" href="api__carburants_8php_source.html#l00118">normaliser_stations()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__xml_8php_source.html#l00170">getStationsXml()</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="a62abcc92d59ea865c8da8b5d7d8f6b81" name="a62abcc92d59ea865c8da8b5d7d8f6b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62abcc92d59ea865c8da8b5d7d8f6b81">&#9670;&#160;</a></span>API_CARBURANTS_URL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const API_CARBURANTS_URL = 'https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/prix-des-carburants-en-france-flux-instantane-v2/records/'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>URL de base de l'API carburants </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="api__carburants_8php_source.html#l00022">22</a> du fichier <a class="el" href="api__carburants_8php_source.html">api_carburants.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__xml_8php_source.html#l00170">getStationsXml()</a>, et <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+<a id="a177fb4ebfa680fecc57faf4a26bbfa5f" name="a177fb4ebfa680fecc57faf4a26bbfa5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177fb4ebfa680fecc57faf4a26bbfa5f">&#9670;&#160;</a></span>API_LIMIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const API_LIMIT = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nombre maximum de résultats par requête </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="api__carburants_8php_source.html#l00025">25</a> du fichier <a class="el" href="api__carburants_8php_source.html">api_carburants.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__carburants_8php_source.html#l00041">recuperer_stations()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a href="api__carburants_8php.html">api_carburants.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

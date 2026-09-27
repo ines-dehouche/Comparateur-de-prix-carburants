@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier includes/config.inc.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('config_8inc_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier config.inc.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Configuration générale du projet Carbora.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="config_8inc_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af94a4d6591c65fe439abbc76af8a4916" id="r_af94a4d6591c65fe439abbc76af8a4916"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#af94a4d6591c65fe439abbc76af8a4916">SITE_NAME</a> 'Carbora'</td></tr>
+<tr class="memitem:ac1b739f48fa7746cac7fdf34ae4e8cfa" id="r_ac1b739f48fa7746cac7fdf34ae4e8cfa"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#ac1b739f48fa7746cac7fdf34ae4e8cfa">SITE_TAGLINE</a> 'Prix des carburants en France'</td></tr>
+<tr class="memitem:a99c076f9ed84e01b5c1e6a60cf9e0658" id="r_a99c076f9ed84e01b5c1e6a60cf9e0658"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a99c076f9ed84e01b5c1e6a60cf9e0658">SITE_DESCRIPTION</a> 'Projet L2 Développement Web autour des prix des carburants.'</td></tr>
+<tr class="memitem:a99b0dd69553205e1cca71ee9d1aab8e7" id="r_a99b0dd69553205e1cca71ee9d1aab8e7"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> dirname(__DIR__)</td></tr>
+<tr class="memitem:a3d187fd4f1898eb4d2441b639ff4f213" id="r_a3d187fd4f1898eb4d2441b639ff4f213"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a3d187fd4f1898eb4d2441b639ff4f213">INCLUDES_PATH</a> <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/includes'</td></tr>
+<tr class="memitem:aa063c36b1629425a25a31d20b5da4ecf" id="r_aa063c36b1629425a25a31d20b5da4ecf"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#aa063c36b1629425a25a31d20b5da4ecf">LIB_PATH</a> <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/lib'</td></tr>
+<tr class="memitem:a8ec2210feb063dc978d152f6340a9878" id="r_a8ec2210feb063dc978d152f6340a9878"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a8ec2210feb063dc978d152f6340a9878">DATA_PATH</a> <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/data'</td></tr>
+<tr class="memitem:a9c0c16137809254ba64f9428707c6d3b" id="r_a9c0c16137809254ba64f9428707c6d3b"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a9c0c16137809254ba64f9428707c6d3b">ASSETS_PATH</a> <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/assets'</td></tr>
+<tr class="memitem:ab49b23b44b00da367df976906ad4457c" id="r_ab49b23b44b00da367df976906ad4457c"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#ab49b23b44b00da367df976906ad4457c">LOGO_PATH</a> 'assets/img/logo_carbora.png'</td></tr>
+<tr class="memitem:a9c68b687c30a118d0f148c3ce23b4e14" id="r_a9c68b687c30a118d0f148c3ce23b4e14"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a9c68b687c30a118d0f148c3ce23b4e14">FAVICON_PATH</a> 'assets/img/favicon.jpeg'</td></tr>
+<tr class="memitem:af93ec7018aa17674b502a5bce5d7247e" id="r_af93ec7018aa17674b502a5bce5d7247e"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#af93ec7018aa17674b502a5bce5d7247e">MAIN_CSS_PATH</a> 'assets/css/style.css'</td></tr>
+<tr class="memitem:aaeb42b19691a751f51d6d568d93ccb6f" id="r_aaeb42b19691a751f51d6d568d93ccb6f"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#aaeb42b19691a751f51d6d568d93ccb6f">API_GHIBLI_URL</a> 'https://ghibliapi.vercel.app/films'</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Configuration générale du projet Carbora. </p>
+
+<p class="definition">Définition dans le fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+</div><a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="aaeb42b19691a751f51d6d568d93ccb6f" name="aaeb42b19691a751f51d6d568d93ccb6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb42b19691a751f51d6d568d93ccb6f">&#9670;&#160;</a></span>API_GHIBLI_URL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const API_GHIBLI_URL 'https://ghibliapi.vercel.app/films'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00025">25</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="api__ghibli_8php_source.html#l00019">getGhibliFilms()</a>, et <a class="el" href="api__xml_8php_source.html#l00045">getGhibliFilmsXml()</a>.</p>
+
+</div>
+</div>
+<a id="a9c0c16137809254ba64f9428707c6d3b" name="a9c0c16137809254ba64f9428707c6d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0c16137809254ba64f9428707c6d3b">&#9670;&#160;</a></span>ASSETS_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ASSETS_PATH <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/assets'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00019">19</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="a8ec2210feb063dc978d152f6340a9878" name="a8ec2210feb063dc978d152f6340a9878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec2210feb063dc978d152f6340a9878">&#9670;&#160;</a></span>DATA_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DATA_PATH <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/data'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00018">18</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__geo_8php_source.html#l00117">charger_communes_par_dept()</a>, <a class="el" href="csv__geo_8php_source.html#l00055">charger_departements()</a>, <a class="el" href="csv__geo_8php_source.html#l00018">charger_regions()</a>, <a class="el" href="csv__handler_8php_source.html#l00237">incrementer_hits()</a>, <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>, et <a class="el" href="csv__handler_8php_source.html#l00256">lire_hits()</a>.</p>
+
+</div>
+</div>
+<a id="a9c68b687c30a118d0f148c3ce23b4e14" name="a9c68b687c30a118d0f148c3ce23b4e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c68b687c30a118d0f148c3ce23b4e14">&#9670;&#160;</a></span>FAVICON_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const FAVICON_PATH 'assets/img/favicon.jpeg'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00022">22</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="a3d187fd4f1898eb4d2441b639ff4f213" name="a3d187fd4f1898eb4d2441b639ff4f213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d187fd4f1898eb4d2441b639ff4f213">&#9670;&#160;</a></span>INCLUDES_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const INCLUDES_PATH <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/includes'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00016">16</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="aa063c36b1629425a25a31d20b5da4ecf" name="aa063c36b1629425a25a31d20b5da4ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa063c36b1629425a25a31d20b5da4ecf">&#9670;&#160;</a></span>LIB_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const LIB_PATH <a class="el" href="#a99b0dd69553205e1cca71ee9d1aab8e7">ROOT_PATH</a> . '/lib'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00017">17</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="ab49b23b44b00da367df976906ad4457c" name="ab49b23b44b00da367df976906ad4457c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49b23b44b00da367df976906ad4457c">&#9670;&#160;</a></span>LOGO_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const LOGO_PATH 'assets/img/logo_carbora.png'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00021">21</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="af93ec7018aa17674b502a5bce5d7247e" name="af93ec7018aa17674b502a5bce5d7247e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93ec7018aa17674b502a5bce5d7247e">&#9670;&#160;</a></span>MAIN_CSS_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MAIN_CSS_PATH 'assets/css/style.css'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00023">23</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="a99b0dd69553205e1cca71ee9d1aab8e7" name="a99b0dd69553205e1cca71ee9d1aab8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b0dd69553205e1cca71ee9d1aab8e7">&#9670;&#160;</a></span>ROOT_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ROOT_PATH dirname(__DIR__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00015">15</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="a99c076f9ed84e01b5c1e6a60cf9e0658" name="a99c076f9ed84e01b5c1e6a60cf9e0658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c076f9ed84e01b5c1e6a60cf9e0658">&#9670;&#160;</a></span>SITE_DESCRIPTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SITE_DESCRIPTION 'Projet L2 Développement Web autour des prix des carburants.'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00013">13</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="af94a4d6591c65fe439abbc76af8a4916" name="af94a4d6591c65fe439abbc76af8a4916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94a4d6591c65fe439abbc76af8a4916">&#9670;&#160;</a></span>SITE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SITE_NAME 'Carbora'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00011">11</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+<a id="ac1b739f48fa7746cac7fdf34ae4e8cfa" name="ac1b739f48fa7746cac7fdf34ae4e8cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b739f48fa7746cac7fdf34ae4e8cfa">&#9670;&#160;</a></span>SITE_TAGLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SITE_TAGLINE 'Prix des carburants en France'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="config_8inc_8php_source.html#l00012">12</a> du fichier <a class="el" href="config_8inc_8php_source.html">config.inc.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a href="config_8inc_8php.html">config.inc.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

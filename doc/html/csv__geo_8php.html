@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier lib/csv_geo.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('csv__geo_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier csv_geo.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Chargement des données géographiques depuis les fichiers CSV.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="csv__geo_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a1cd6c75330d31f4f95b6e6105a9ba2cb" id="r_a1cd6c75330d31f4f95b6e6105a9ba2cb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1cd6c75330d31f4f95b6e6105a9ba2cb">charger_regions</a> ()</td></tr>
+<tr class="memdesc:a1cd6c75330d31f4f95b6e6105a9ba2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge la liste des régions françaises depuis regions.csv.  <br /></td></tr>
+<tr class="memitem:a887720932e39322416f76ada23f04132" id="r_a887720932e39322416f76ada23f04132"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a887720932e39322416f76ada23f04132">charger_departements</a> ()</td></tr>
+<tr class="memdesc:a887720932e39322416f76ada23f04132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge la liste des départements depuis departements.csv.  <br /></td></tr>
+<tr class="memitem:a77068f62c9bbd714a574cc8101b2cb37" id="r_a77068f62c9bbd714a574cc8101b2cb37"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a77068f62c9bbd714a574cc8101b2cb37">departements_par_region</a> (array $departements)</td></tr>
+<tr class="memdesc:a77068f62c9bbd714a574cc8101b2cb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regroupe les départements par code région.  <br /></td></tr>
+<tr class="memitem:a2116529f7a6395fcb445a711dd4cd242" id="r_a2116529f7a6395fcb445a711dd4cd242"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2116529f7a6395fcb445a711dd4cd242">charger_communes_par_dept</a> (string $code_dept)</td></tr>
+<tr class="memdesc:a2116529f7a6395fcb445a711dd4cd242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge les communes d'un département depuis communes.csv.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Chargement des données géographiques depuis les fichiers CSV. </p>
+<dl class="section author"><dt>Auteur</dt><dd>BOUNAB Kahina - DEHOUCHE Ines </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="csv__geo_8php_source.html">csv_geo.php</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="a2116529f7a6395fcb445a711dd4cd242" name="a2116529f7a6395fcb445a711dd4cd242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2116529f7a6395fcb445a711dd4cd242">&#9670;&#160;</a></span>charger_communes_par_dept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">charger_communes_par_dept </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$code_dept</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge les communes d'un département depuis communes.csv. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$code_dept</td><td>Code du département </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array Liste des communes avec nom et code postal </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__geo_8php_source.html#l00117">117</a> du fichier <a class="el" href="csv__geo_8php_source.html">csv_geo.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="communes_8php_source.html#l00029">$communes</a>, et <a class="el" href="config_8inc_8php_source.html#l00018">DATA_PATH</a>.</p>
+
+</div>
+</div>
+<a id="a887720932e39322416f76ada23f04132" name="a887720932e39322416f76ada23f04132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887720932e39322416f76ada23f04132">&#9670;&#160;</a></span>charger_departements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">charger_departements </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge la liste des départements depuis departements.csv. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>array Tableau des départements avec code, nom et région </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__geo_8php_source.html#l00055">55</a> du fichier <a class="el" href="csv__geo_8php_source.html">csv_geo.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="config_8inc_8php_source.html#l00018">DATA_PATH</a>.</p>
+
+</div>
+</div>
+<a id="a1cd6c75330d31f4f95b6e6105a9ba2cb" name="a1cd6c75330d31f4f95b6e6105a9ba2cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd6c75330d31f4f95b6e6105a9ba2cb">&#9670;&#160;</a></span>charger_regions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">charger_regions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge la liste des régions françaises depuis regions.csv. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>array Tableau associatif [code =&gt; nom] </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__geo_8php_source.html#l00018">18</a> du fichier <a class="el" href="csv__geo_8php_source.html">csv_geo.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="carte_8php_source.html#l00026">$regions</a>, et <a class="el" href="config_8inc_8php_source.html#l00018">DATA_PATH</a>.</p>
+
+</div>
+</div>
+<a id="a77068f62c9bbd714a574cc8101b2cb37" name="a77068f62c9bbd714a574cc8101b2cb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77068f62c9bbd714a574cc8101b2cb37">&#9670;&#160;</a></span>departements_par_region()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">departements_par_region </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$departements</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regroupe les départements par code région. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$departements</td><td>Tableau des départements </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array Tableau [code_region =&gt; [departements]] </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__geo_8php_source.html#l00093">93</a> du fichier <a class="el" href="csv__geo_8php_source.html">csv_geo.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="carte_8php_source.html#l00027">$departements</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a href="csv__geo_8php.html">csv_geo.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

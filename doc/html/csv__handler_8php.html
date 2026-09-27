@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier lib/csv_handler.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('csv__handler_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier csv_handler.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion des consultations : lecture/écriture CSV et cookie.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="csv__handler_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a9e14b54ba5e9a3fee9bf4c57ce5423d5" id="r_a9e14b54ba5e9a3fee9bf4c57ce5423d5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9e14b54ba5e9a3fee9bf4c57ce5423d5">enregistrer_consultation</a> (string $ville, string $dept, string $region, string $carburant='')</td></tr>
+<tr class="memitem:a05fb83972eb3a2628f88bad5bdb393f3" id="r_a05fb83972eb3a2628f88bad5bdb393f3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a05fb83972eb3a2628f88bad5bdb393f3">lire_consultations</a> (int $limite=0)</td></tr>
+<tr class="memitem:a68dd3cb99b0321c8842d9a9aab850f6e" id="r_a68dd3cb99b0321c8842d9a9aab850f6e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a68dd3cb99b0321c8842d9a9aab850f6e">top_villes_consultees</a> (int $top=10)</td></tr>
+<tr class="memitem:aeb5f0d009299e9dc71b30b9418672add" id="r_aeb5f0d009299e9dc71b30b9418672add"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aeb5f0d009299e9dc71b30b9418672add">top_regions_consultees</a> (int $top=13)</td></tr>
+<tr class="memitem:a47b0c83958af6f00b2884433a963da81" id="r_a47b0c83958af6f00b2884433a963da81"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a47b0c83958af6f00b2884433a963da81">stats_carburants</a> ()</td></tr>
+<tr class="memitem:ae46a17f2937af5689b2de8a4f4679974" id="r_ae46a17f2937af5689b2de8a4f4679974"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae46a17f2937af5689b2de8a4f4679974">stats_jours_semaine</a> ()</td></tr>
+<tr class="memitem:ac403179737d4c2f20ec9e644136eb4f3" id="r_ac403179737d4c2f20ec9e644136eb4f3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac403179737d4c2f20ec9e644136eb4f3">stats_heures</a> ()</td></tr>
+<tr class="memitem:ae79ac27b2f7fba01d4d8d733de58064f" id="r_ae79ac27b2f7fba01d4d8d733de58064f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae79ac27b2f7fba01d4d8d733de58064f">incrementer_hits</a> ()</td></tr>
+<tr class="memitem:a27e131ae17d26a06676c1aecdafebb9a" id="r_a27e131ae17d26a06676c1aecdafebb9a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a27e131ae17d26a06676c1aecdafebb9a">lire_hits</a> ()</td></tr>
+<tr class="memitem:a63d162475801dd9c891689f43b38819f" id="r_a63d162475801dd9c891689f43b38819f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a63d162475801dd9c891689f43b38819f">sauvegarder_cookie_derniere_ville</a> (string $ville, string $dept, string $region)</td></tr>
+<tr class="memitem:af3e648c1d57e57955d13467a6f95afb4" id="r_af3e648c1d57e57955d13467a6f95afb4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af3e648c1d57e57955d13467a6f95afb4">lire_cookie_derniere_ville</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afe315ed8d2b1fa02add000a4903924d2" id="r_afe315ed8d2b1fa02add000a4903924d2"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#afe315ed8d2b1fa02add000a4903924d2">COOKIE_DERNIERE_VILLE</a> = 'derniere_ville'</td></tr>
+<tr class="memitem:a7252bf671cf45266276c2d89bd8e7626" id="r_a7252bf671cf45266276c2d89bd8e7626"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a7252bf671cf45266276c2d89bd8e7626">COOKIE_VILLE_DUREE</a> = 30 * 24 * 3600</td></tr>
+<tr class="memitem:a4db090c498afefe9c4918a44096d405f" id="r_a4db090c498afefe9c4918a44096d405f"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#a4db090c498afefe9c4918a44096d405f">CSV_SEPARATOR</a> = ';'</td></tr>
+<tr class="memitem:ab3b8da1564cd9fdcccadb090442c6bc3" id="r_ab3b8da1564cd9fdcccadb090442c6bc3"><td class="memItemLeft">const&#160;</td><td class="memItemRight"><a class="el" href="#ab3b8da1564cd9fdcccadb090442c6bc3">HITS_FILE</a> = 'hits.txt'</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion des consultations : lecture/écriture CSV et cookie. </p>
+<p>Ce fichier gère deux mécanismes de stockage :</p><ol type="1">
+<li>Côté serveur : fichier CSV data/consultations.csv (horodaté)</li>
+<li>Côté client : cookie "derniere_ville" (ville, dept, région, date)</li>
+</ol>
+<p>Format CSV : horodatage;ville;departement;region;carburant</p>
+<dl class="section author"><dt>Auteur</dt><dd>BOUNAB Kahina - DEHOUCHE Ines </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="a9e14b54ba5e9a3fee9bf4c57ce5423d5" name="a9e14b54ba5e9a3fee9bf4c57ce5423d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e14b54ba5e9a3fee9bf4c57ce5423d5">&#9670;&#160;</a></span>enregistrer_consultation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enregistrer_consultation </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$ville</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$dept</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$region</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$carburant</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enregistre une consultation dans le fichier CSV côté serveur.</p>
+<p>Chaque ligne contient : horodatage;ville;département;région;carburant Exemple : "2026-04-20 14:30:00;Paris;75;11;SP95"</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$ville</td><td>Nom de la ville consultée </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dept</td><td>Code du département </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$region</td><td>Code de la région </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$carburant</td><td>Type de carburant (vide = tous) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool true si l'écriture a réussi, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00044">44</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="communes_8php_source.html#l00021">$dept</a>, <a class="el" href="api__proxy_8php_source.html#l00050">$ville</a>, et <a class="el" href="header_8inc_8php_source.html#l00030">if</a>.</p>
+
+</div>
+</div>
+<a id="ae79ac27b2f7fba01d4d8d733de58064f" name="ae79ac27b2f7fba01d4d8d733de58064f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae79ac27b2f7fba01d4d8d733de58064f">&#9670;&#160;</a></span>incrementer_hits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">incrementer_hits </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Incrémente et retourne le compteur de hits (visites).</p>
+<dl class="section return"><dt>Renvoie</dt><dd>int Nombre total de visites </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00237">237</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="config_8inc_8php_source.html#l00018">DATA_PATH</a>, et <a class="el" href="csv__handler_8php_source.html#l00030">HITS_FILE</a>.</p>
+
+</div>
+</div>
+<a id="a05fb83972eb3a2628f88bad5bdb393f3" name="a05fb83972eb3a2628f88bad5bdb393f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05fb83972eb3a2628f88bad5bdb393f3">&#9670;&#160;</a></span>lire_consultations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lire_consultations </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limite</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lit toutes les consultations depuis le CSV serveur.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$limite</td><td>Nombre maximum de lignes (0 = toutes) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;int, array{horodatage:string, ville:string, departement:string, region:string, carburant:string}&gt; </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00087">87</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="csv__handler_8php_source.html#l00027">CSV_SEPARATOR</a>, et <a class="el" href="config_8inc_8php_source.html#l00018">DATA_PATH</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__handler_8php_source.html#l00171">stats_carburants()</a>, <a class="el" href="csv__handler_8php_source.html#l00218">stats_heures()</a>, <a class="el" href="csv__handler_8php_source.html#l00190">stats_jours_semaine()</a>, <a class="el" href="csv__handler_8php_source.html#l00150">top_regions_consultees()</a>, et <a class="el" href="csv__handler_8php_source.html#l00128">top_villes_consultees()</a>.</p>
+
+</div>
+</div>
+<a id="af3e648c1d57e57955d13467a6f95afb4" name="af3e648c1d57e57955d13467a6f95afb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e648c1d57e57955d13467a6f95afb4">&#9670;&#160;</a></span>lire_cookie_derniere_ville()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lire_cookie_derniere_ville </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lit le cookie de dernière ville consultée.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>array{ville:string,dept:string,region:string,date:string}|null </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00302">302</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="api__proxy_8php_source.html#l00113">$data</a>, et <a class="el" href="csv__handler_8php_source.html#l00021">COOKIE_DERNIERE_VILLE</a>.</p>
+
+</div>
+</div>
+<a id="a27e131ae17d26a06676c1aecdafebb9a" name="a27e131ae17d26a06676c1aecdafebb9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e131ae17d26a06676c1aecdafebb9a">&#9670;&#160;</a></span>lire_hits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lire_hits </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lit le compteur de hits sans l'incrémenter.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>int Nombre total de visites </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00256">256</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="config_8inc_8php_source.html#l00018">DATA_PATH</a>, et <a class="el" href="csv__handler_8php_source.html#l00030">HITS_FILE</a>.</p>
+
+</div>
+</div>
+<a id="a63d162475801dd9c891689f43b38819f" name="a63d162475801dd9c891689f43b38819f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d162475801dd9c891689f43b38819f">&#9670;&#160;</a></span>sauvegarder_cookie_derniere_ville()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sauvegarder_cookie_derniere_ville </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$ville</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$dept</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$region</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sauvegarde la dernière ville consultée dans un cookie navigateur.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$ville</td><td>Nom de la ville </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dept</td><td>Code département </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$region</td><td>Code région </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool true si le cookie a été posé </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00273">273</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="communes_8php_source.html#l00021">$dept</a>, <a class="el" href="api__proxy_8php_source.html#l00050">$ville</a>, et <a class="el" href="header_8inc_8php_source.html#l00030">if</a>.</p>
+
+</div>
+</div>
+<a id="a47b0c83958af6f00b2884433a963da81" name="a47b0c83958af6f00b2884433a963da81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b0c83958af6f00b2884433a963da81">&#9670;&#160;</a></span>stats_carburants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stats_carburants </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retourne la répartition des carburants recherchés.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;string, int&gt; [carburant =&gt; nb_recherches], trié par fréquence </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00171">171</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="api__proxy_8php_source.html#l00051">$carb</a>, et <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>.</p>
+
+</div>
+</div>
+<a id="ac403179737d4c2f20ec9e644136eb4f3" name="ac403179737d4c2f20ec9e644136eb4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac403179737d4c2f20ec9e644136eb4f3">&#9670;&#160;</a></span>stats_heures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stats_heures </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retourne les consultations par tranche horaire (0-23h).</p>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;int, int&gt; [heure =&gt; nb_consultations] </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00218">218</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>.</p>
+
+</div>
+</div>
+<a id="ae46a17f2937af5689b2de8a4f4679974" name="ae46a17f2937af5689b2de8a4f4679974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46a17f2937af5689b2de8a4f4679974">&#9670;&#160;</a></span>stats_jours_semaine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stats_jours_semaine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retourne les consultations par jour de la semaine.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;string, int&gt; [jour =&gt; nb_consultations] </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00190">190</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>.</p>
+
+</div>
+</div>
+<a id="aeb5f0d009299e9dc71b30b9418672add" name="aeb5f0d009299e9dc71b30b9418672add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5f0d009299e9dc71b30b9418672add">&#9670;&#160;</a></span>top_regions_consultees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">top_regions_consultees </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$top</em></span><span class="paramdefsep"> = </span><span class="paramdefval">13</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retourne les régions les plus consultées.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$top</td><td>Nombre de régions à retourner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;string, int&gt; [region =&gt; nb_consultations], trié par fréquence </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00150">150</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>.</p>
+
+</div>
+</div>
+<a id="a68dd3cb99b0321c8842d9a9aab850f6e" name="a68dd3cb99b0321c8842d9a9aab850f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68dd3cb99b0321c8842d9a9aab850f6e">&#9670;&#160;</a></span>top_villes_consultees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">top_villes_consultees </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$top</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retourne les villes les plus consultées.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$top</td><td>Nombre de villes à retourner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>array&lt;string, int&gt; [ville =&gt; nb_consultations], trié par fréquence </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00128">128</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Références <a class="el" href="api__proxy_8php_source.html#l00050">$ville</a>, et <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="afe315ed8d2b1fa02add000a4903924d2" name="afe315ed8d2b1fa02add000a4903924d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe315ed8d2b1fa02add000a4903924d2">&#9670;&#160;</a></span>COOKIE_DERNIERE_VILLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const COOKIE_DERNIERE_VILLE = 'derniere_ville'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nom du cookie de dernière ville </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00021">21</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__handler_8php_source.html#l00302">lire_cookie_derniere_ville()</a>.</p>
+
+</div>
+</div>
+<a id="a7252bf671cf45266276c2d89bd8e7626" name="a7252bf671cf45266276c2d89bd8e7626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7252bf671cf45266276c2d89bd8e7626">&#9670;&#160;</a></span>COOKIE_VILLE_DUREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const COOKIE_VILLE_DUREE = 30 * 24 * 3600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Durée de vie du cookie dernière ville : 30 jours </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00024">24</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+</div>
+</div>
+<a id="a4db090c498afefe9c4918a44096d405f" name="a4db090c498afefe9c4918a44096d405f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db090c498afefe9c4918a44096d405f">&#9670;&#160;</a></span>CSV_SEPARATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const CSV_SEPARATOR = ';'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Séparateur utilisé dans le CSV de consultations </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00027">27</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__handler_8php_source.html#l00087">lire_consultations()</a>.</p>
+
+</div>
+</div>
+<a id="ab3b8da1564cd9fdcccadb090442c6bc3" name="ab3b8da1564cd9fdcccadb090442c6bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b8da1564cd9fdcccadb090442c6bc3">&#9670;&#160;</a></span>HITS_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const HITS_FILE = 'hits.txt'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fichier de compteur de hits </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="csv__handler_8php_source.html#l00030">30</a> du fichier <a class="el" href="csv__handler_8php_source.html">csv_handler.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__handler_8php_source.html#l00237">incrementer_hits()</a>, et <a class="el" href="csv__handler_8php_source.html#l00256">lire_hits()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a href="csv__handler_8php.html">csv_handler.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

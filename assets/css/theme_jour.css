@@ -1,0 +1,78 @@
+/* ============================================
+   theme_jour.css — Charte graphique MODE JOUR
+   Fond clair, texte sombre → lisibilité maximale
+   ============================================ */
+
+body.theme-jour {
+    background-color: #F8FAFC;
+    color: #1F2937;
+}
+
+/* Sections (les "cartes" blanches) */
+body.theme-jour section {
+    background-color: #FFFFFF;
+    color: #1F2937;
+}
+
+/* Titres h1, h2, h3 */
+body.theme-jour h1,
+body.theme-jour h2,
+body.theme-jour h3 {
+    color: #0F172A;
+}
+
+/* Paragraphes et texte courant */
+body.theme-jour p {
+    color: #1F2937;
+}
+
+/* strong (ex: "Titre japonais :", "Année de sortie :") */
+body.theme-jour strong {
+    color: #0F172A;
+}
+
+/* Texte secondaire (figcaption, légendes) */
+body.theme-jour figcaption {
+    color: #475569;
+}
+
+/* Liens */
+body.theme-jour a {
+    color: #1D4ED8;
+}
+body.theme-jour a:hover {
+    color: #F97316;
+}
+
+/* Footer en mode jour : fond clair, texte lisible */
+body.theme-jour .site-footer {
+    background-color: #1E293B;
+    color: #F1F5F9;
+}
+
+body.theme-jour .site-footer p {
+    color: #CBD5E1;
+}
+
+body.theme-jour .site-footer a {
+    color: #FBBF24;
+}
+
+body.theme-jour .site-footer a:hover {
+    color: #FFFFFF;
+}
+
+body.theme-jour .site-footer .compteur {
+    color: #F97316;
+}
+
+/* Navigation : liens toujours blancs sur fond sombre du header */
+body.theme-jour .main-nav a {
+    color: #FFFFFF;
+}
+
+body.theme-jour .main-nav a:hover,
+body.theme-jour .main-nav a:focus {
+    background-color: #F97316;
+    color: #FFFFFF;
+}

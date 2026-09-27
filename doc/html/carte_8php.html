@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carbora: Référence du fichier carte.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carbora<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Site de prix des carburants en France - L2 Informatique S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('carte_8php.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier carte.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Page de sélection géographique interactive (région → département → ville).  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="carte_8php_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a43e5b5a819fedbd12b8cf5421ba6985e" id="r_a43e5b5a819fedbd12b8cf5421ba6985e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a> = 'Carte des régions - Carbora'</td></tr>
+<tr class="memitem:a270fcd32e1040253108d7d58d43c6dcf" id="r_a270fcd32e1040253108d7d58d43c6dcf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a270fcd32e1040253108d7d58d43c6dcf">$regions</a> = <a class="el" href="csv__geo_8php.html#a1cd6c75330d31f4f95b6e6105a9ba2cb">charger_regions</a>()</td></tr>
+<tr class="memitem:adad9b2799c69f4c9deb75ea73c6b12c8" id="r_adad9b2799c69f4c9deb75ea73c6b12c8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#adad9b2799c69f4c9deb75ea73c6b12c8">$departements</a> = <a class="el" href="csv__geo_8php.html#a887720932e39322416f76ada23f04132">charger_departements</a>()</td></tr>
+<tr class="memitem:a5bfb26c78f1e955b59a90196e8ac4a8a" id="r_a5bfb26c78f1e955b59a90196e8ac4a8a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5bfb26c78f1e955b59a90196e8ac4a8a">$depts_par_region</a> = <a class="el" href="csv__geo_8php.html#a77068f62c9bbd714a574cc8101b2cb37">departements_par_region</a>($departements)</td></tr>
+<tr class="memitem:a2707c691ed543a2962f8ad53adefd323" id="r_a2707c691ed543a2962f8ad53adefd323"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2707c691ed543a2962f8ad53adefd323">$region_selectionnee</a> = htmlspecialchars(trim($_GET['region'] ?? ''), ENT_QUOTES, 'UTF-8')</td></tr>
+<tr class="memitem:a3bc1a5dcee32c2b27c367cca35ff91e9" id="r_a3bc1a5dcee32c2b27c367cca35ff91e9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3bc1a5dcee32c2b27c367cca35ff91e9">$dept_selectionne</a> = htmlspecialchars(trim($_GET['dept'] ?? ''), ENT_QUOTES, 'UTF-8')</td></tr>
+<tr class="memitem:a78ebcca49d51d54257ddf3c2b674484b" id="r_a78ebcca49d51d54257ddf3c2b674484b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a78ebcca49d51d54257ddf3c2b674484b">$nom_region_sel</a> = ''</td></tr>
+<tr class="memitem:a044ec22644ac7a2dad8b95615d920917" id="r_a044ec22644ac7a2dad8b95615d920917"><td class="memItemLeft"><a class="el" href="#ace4ad2ef1230246139becc3d203e110b">foreach</a>($regions as $r)&#160;</td><td class="memItemRight"><a class="el" href="#a044ec22644ac7a2dad8b95615d920917">$styles_extra</a> =</td></tr>
+<tr class="memitem:ace4ad2ef1230246139becc3d203e110b" id="r_ace4ad2ef1230246139becc3d203e110b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ace4ad2ef1230246139becc3d203e110b">foreach</a> ( $regions as $r) =$couleurs_carb[$carb]??['bg'=&gt;'#1E3A8A','text'=&gt;'#EFF6FF','bar'=&gt;'#3B82F6']</td></tr>
+<tr class="memitem:a672d9707ef91db026c210f98cc601123" id="r_a672d9707ef91db026c210f98cc601123"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a672d9707ef91db026c210f98cc601123">endforeach</a></td></tr>
+<tr class="memitem:a14d5de17f6217e7c3d2bc74aa5104aad" id="r_a14d5de17f6217e7c3d2bc74aa5104aad"><td class="memItemLeft"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a>&#160;</td><td class="memItemRight"><a class="el" href="#a14d5de17f6217e7c3d2bc74aa5104aad">(!empty( $region_selectionnee) &amp;&amp;isset( $depts_par_region[ $region_selectionnee]))</a> ( $depts_par_region[ $region_selectionnee] as $d)</td></tr>
+<tr class="memitem:a82cd33ca97ff99f2fcc5e9c81d65251b" id="r_a82cd33ca97ff99f2fcc5e9c81d65251b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Page de sélection géographique interactive (région → département → ville). </p>
+<p>Fonctionnalités :</p><ul>
+<li>Carte interactive de France via balises HTML &lt;map&gt;, &lt;usemap&gt;, &lt;area&gt;</li>
+<li>Navigation en cascade : région → département → ville</li>
+<li>Chargement AJAX des communes via <a class="el" href="communes_8php.html" title="Point d&#39;accès AJAX : retourne les communes d&#39;un département en JSON.">communes.php</a></li>
+<li>Filtrage optionnel par type de carburant</li>
+<li>Redirection vers <a class="el" href="resultats_8php.html" title="Page d&#39;affichage des résultats de prix de carburants.">resultats.php</a> après sélection</li>
+</ul>
+<dl class="section author"><dt>Auteur</dt><dd>BOUNAB Kahina - DEHOUCHE Ines </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.2 — Corrections accessibilité WAVE (contraste, texte petit, événements clavier) </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+</div><a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="adad9b2799c69f4c9deb75ea73c6b12c8" name="adad9b2799c69f4c9deb75ea73c6b12c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad9b2799c69f4c9deb75ea73c6b12c8">&#9670;&#160;</a></span>$departements</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$departements = <a class="el" href="csv__geo_8php.html#a887720932e39322416f76ada23f04132">charger_departements</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00027">27</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__geo_8php_source.html#l00093">departements_par_region()</a>.</p>
+
+</div>
+</div>
+<a id="a3bc1a5dcee32c2b27c367cca35ff91e9" name="a3bc1a5dcee32c2b27c367cca35ff91e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc1a5dcee32c2b27c367cca35ff91e9">&#9670;&#160;</a></span>$dept_selectionne</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$dept_selectionne = htmlspecialchars(trim($_GET['dept'] ?? ''), ENT_QUOTES, 'UTF-8')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00032">32</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a5bfb26c78f1e955b59a90196e8ac4a8a" name="a5bfb26c78f1e955b59a90196e8ac4a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bfb26c78f1e955b59a90196e8ac4a8a">&#9670;&#160;</a></span>$depts_par_region</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depts_par_region = <a class="el" href="csv__geo_8php.html#a77068f62c9bbd714a574cc8101b2cb37">departements_par_region</a>($departements)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00028">28</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a78ebcca49d51d54257ddf3c2b674484b" name="a78ebcca49d51d54257ddf3c2b674484b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ebcca49d51d54257ddf3c2b674484b">&#9670;&#160;</a></span>$nom_region_sel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nom_region_sel = ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00035">35</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a2707c691ed543a2962f8ad53adefd323" name="a2707c691ed543a2962f8ad53adefd323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2707c691ed543a2962f8ad53adefd323">&#9670;&#160;</a></span>$region_selectionnee</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$region_selectionnee = htmlspecialchars(trim($_GET['region'] ?? ''), ENT_QUOTES, 'UTF-8')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00031">31</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a270fcd32e1040253108d7d58d43c6dcf" name="a270fcd32e1040253108d7d58d43c6dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270fcd32e1040253108d7d58d43c6dcf">&#9670;&#160;</a></span>$regions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$regions = <a class="el" href="csv__geo_8php.html#a1cd6c75330d31f4f95b6e6105a9ba2cb">charger_regions</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00026">26</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="csv__geo_8php_source.html#l00018">charger_regions()</a>.</p>
+
+</div>
+</div>
+<a id="a044ec22644ac7a2dad8b95615d920917" name="a044ec22644ac7a2dad8b95615d920917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044ec22644ac7a2dad8b95615d920917">&#9670;&#160;</a></span>$styles_extra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ace4ad2ef1230246139becc3d203e110b">foreach</a> ( $regions as $r) $styles_extra =</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00043">43</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a43e5b5a819fedbd12b8cf5421ba6985e" name="a43e5b5a819fedbd12b8cf5421ba6985e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e5b5a819fedbd12b8cf5421ba6985e">&#9670;&#160;</a></span>$titre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$titre = 'Carte des régions - Carbora'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00019">19</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a14d5de17f6217e7c3d2bc74aa5104aad" name="a14d5de17f6217e7c3d2bc74aa5104aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d5de17f6217e7c3d2bc74aa5104aad">&#9670;&#160;</a></span>(!empty( $region_selectionnee) &amp;&amp;isset( $depts_par_region[ $region_selectionnee]))</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8inc_8php.html#a18819af755a781855afea6dd8e8238a2">if</a> (!empty($region_selectionnee) &amp;&amp;isset($depts_par_region[$region_selectionnee]))($depts_par_region[$region_selectionnee] as $d) </td>
+          <td>(</td>
+          <td class="paramtype">!</td>          <td class="paramname"><span class="paramname"><em>empty</em></span> $region_selectionnee) &amp;&amp;isset( $depts_par_region[ $region_selectionnee]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00504">504</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a672d9707ef91db026c210f98cc601123" name="a672d9707ef91db026c210f98cc601123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672d9707ef91db026c210f98cc601123">&#9670;&#160;</a></span>endforeach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endforeach</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00488">488</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="a82cd33ca97ff99f2fcc5e9c81d65251b" name="a82cd33ca97ff99f2fcc5e9c81d65251b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cd33ca97ff99f2fcc5e9c81d65251b">&#9670;&#160;</a></span>endif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endif</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00512">512</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+<a id="ace4ad2ef1230246139becc3d203e110b" name="ace4ad2ef1230246139becc3d203e110b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace4ad2ef1230246139becc3d203e110b">&#9670;&#160;</a></span>foreach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">foreach </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$regions as</em></span></td><td>)</td>
+          <td> =$couleurs_carb[$carb]??['bg'=&gt;'#1E3A8A','text'=&gt;'#EFF6FF','bar'=&gt;'#3B82F6']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="carte_8php_source.html#l00483">483</a> du fichier <a class="el" href="carte_8php_source.html">carte.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="carte_8php.html">carte.php</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>
